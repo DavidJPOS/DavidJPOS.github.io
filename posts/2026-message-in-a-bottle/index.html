@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="David J.P. O’Sullivan">
-<meta name="dcterms.date" content="2026-07-04">
-<meta name="description" content="A short note on what I plan to write about here.">
+<meta name="dcterms.date" content="2026-04-13">
+<meta name="description" content="Co-written with Kevin Burke: working out the odds that a message in a bottle is found, and found over 100 years later.">
 
-<title>Welcome to the blog – David J.P. O’Sullivan</title>
+<title>What is the chance of a message in a bottle being found? – David J.P. O’Sullivan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -41,7 +41,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-8f7ad84c59fa67a4568554fb12bf7832.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-bde2ea581a64fbf3d3885a3941f0ac24.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-1609cba46804ef7fad7509c04c06b066.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.4/all.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/academicons-1.9.4/size.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,6 +72,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -140,16 +169,17 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Welcome to the blog</h1>
+<h1 class="title">What is the chance of a message in a bottle being found?</h1>
   <div class="quarto-categories">
-    <div class="quarto-category">news</div>
-    <div class="quarto-category">networks</div>
+    <div class="quarto-category">The Conversation</div>
+    <div class="quarto-category">Probability</div>
+    <div class="quarto-category">Public Engagement</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    A short note on what I plan to write about here.
+    Co-written with Kevin Burke: working out the odds that a message in a bottle is found, and found over 100 years later.
   </div>
 </div>
 
@@ -166,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">July 4, 2026</p>
+      <p class="date">April 13, 2026</p>
     </div>
   </div>
   
@@ -178,21 +208,109 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome, and thanks for stopping by. I’ve set up this space to write occasionally about the things I spend my research time on: the science of social networks, how information and behaviour spread through them, and the statistical and computational tools that help us make sense of large social systems.</p>
-<section id="what-to-expect" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-expect">What to expect</h2>
-<p>I expect posts here to fall into a few loose categories:</p>
-<ul>
-<li><strong>Research notes</strong> — plain-language walkthroughs of recent papers from my group, and the questions that motivated them. If you’ve ever wondered whether fake news really spreads differently than a virus, or how we go about finding polarised opinion groups in a referendum debate, this is where I’ll try to explain it without the equations.</li>
-<li><strong>Methods and tools</strong> — short pieces on techniques I find useful, from branching-process models to network community detection, and the practical side of applying statistics to real industry problems through <a href="https://ulsites.ul.ie/macsi/">MACSI</a>.</li>
-<li><strong>Academic life</strong> — reflections on supervision, collaboration, and the day-to-day of research.</li>
-</ul>
+<p><em>This piece was co-written with Kevin Burke and originally published on <a href="https://theconversation.com/what-is-the-chance-of-a-message-in-a-bottle-being-found-272122">The Conversation</a>. You can read the original there.</em></p>
+<p>Recently, a cheerful 100-year-old message in a bottle was <a href="https://theconversation.com/what-is-the-chance-of-a-message-in-a-bottle-being-found-272122">found</a> on the south-west coast of Australia. In it, a world war one soldier proclaimed to be “as happy as Larry”.</p>
+<p>If you’re a betting person, you probably wouldn’t expect great odds of this happening. A bottle cast into the ocean could end up absolutely anywhere.</p>
+<p>If it floats to a remote location, there is little chance of somebody stumbling upon it. And if it lands somewhere more favourable where people could potentially find it, there are other issues. The message itself will deteriorate over time as light degrades it. If the bottle fills with water, it will sink and almost certainly never be found.</p>
+<p>So, what are the chances of a message in a bottle being found and it being over 100? And what are your chances of finding this bottle?</p>
+<section id="a-straightforward-calculation" class="level2">
+<h2 class="anchored" data-anchor-id="a-straightforward-calculation">A straightforward calculation</h2>
+<p>Despite these many possibilities during a bottle’s lifetime, the probability we are after is a straightforward calculation. Just count up the number of bottles with messages that have been found and are over 100 years old, and divide by the number of messages that have been sent this way (assuming we know how many are sent):</p>
+<p><span class="math display">\[
+\frac{\text{Bottles Found Over 100}}{\text{Total Bottles}}.
+\]</span></p>
+<p>Our diagram below shows a hypothetical situation where 20 bottles are sent in total, of which six are found (shown in gold) and one of these is over 100 years old (marked “100”). So, one in 20 bottles are found and over 100 years old. (Note: this is only a hypothetical calculation, not the real data.)</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="hypothetical-bottles.png" class="img-fluid figure-img" alt="A grid of 20 bottle icons; six are filled gold to represent bottles that were found, and two of those are labelled 100 to represent bottles found that are over 100 years old."></p>
+<figcaption>Hypothetical bottle data: 20 bottles sent, six found (gold), one of the found bottles over 100 years old.</figcaption>
+</figure>
+</div>
 </section>
-<section id="a-first-example" class="level2">
-<h2 class="anchored" data-anchor-id="a-first-example">A first example</h2>
-<p>Much of my work uses <em>branching processes</em> to describe how a piece of information — a retweet, a rumour, a behaviour — cascades through a network. The appeal is that a surprisingly simple model can reproduce important statistical features of real cascades, like how “viral” they become. In future posts I’ll unpack how that works and why it matters for understanding online debate.</p>
-<p>If any of this sounds interesting and you’re thinking about a PhD, <a href="mailto:David.OSullivan@ul.ie">get in touch</a> — I’m currently accepting students.</p>
-<p><em>This is a starter post you can edit or delete. To add a new post, create a folder under <code>posts/</code> with its own <code>index.qmd</code> and a <code>date:</code> in the front matter.</em></p>
+<section id="splitting-the-problem-in-two" class="level2">
+<h2 class="anchored" data-anchor-id="splitting-the-problem-in-two">Splitting the problem in two</h2>
+<p>Instead of calculating the probability directly, another way to do it is by breaking the problem into two parts: (A) a bottle with a message is found, and (B) the found bottle is over 100. These two probabilities can be calculated separately and multiplied together to get what we want:</p>
+<p><span class="math display">\[
+\frac{\text{Bottles Found}}{\text{Total Bottles}} \times \frac{\text{Bottles Found Over 100}}{\text{Bottles Found}} = \frac{\text{Bottles Found Over 100}}{\text{Total Bottles}}.
+\]</span></p>
+<p>This is known as the “multiplication rule” of probability, and we confirm from our hypothetical numbers that <span class="math inline">\((6/20) \times (1/6) = 1/20\)</span>, as before.</p>
+<p>Both approaches to calculating this probability are simple. However, the direct calculation requires knowing the total number of bottles sent out, which is very difficult to know in the real world.</p>
+<p>The multiplication rule has the advantage that it breaks the calculation into two parts. We can tackle each separately, then bring the two results together to get the probability we want. This is useful in the real-world situation where we can draw information from different sources.</p>
+</section>
+<section id="part-a-the-chance-a-bottle-is-found-at-all" class="level2">
+<h2 class="anchored" data-anchor-id="part-a-the-chance-a-bottle-is-found-at-all">Part A: the chance a bottle is found at all</h2>
+<p>First, we’ll deal with the probability that a bottle with a message is found, irrespective of its age.</p>
+<p>Experts from the Federal Maritime and Hydrographic Agency of Germany suggest a one in ten chance that a message in a bottle will be found. This aligns broadly with various historical “drift bottle” experiments, where oceanographers released large numbers of bottles to understand ocean currents.</p>
+<p>For example, studies from the 1960s and ’70s in the North Atlantic Ocean led to recovery rates of 14% from the Gulf of Mexico, 8% from the Caribbean Sea and 7% from the northern Brazilian coast. A more recent and more northerly study (between Canada and Greenland) from the 2000s led to a 5% recovery rate.</p>
+<p>We would expect the results to vary naturally from different experiments in different parts of the world. But to keep things simple, we will stick with 1/10 as the probability that a bottle with a message is found.</p>
+</section>
+<section id="part-b-the-chance-a-found-bottle-is-over-100-years-old" class="level2">
+<h2 class="anchored" data-anchor-id="part-b-the-chance-a-found-bottle-is-over-100-years-old">Part B: the chance a found bottle is over 100 years old</h2>
+<p>Now for the second piece of the calculation: of the bottles that are found, what proportion are over 100 years old?</p>
+<p>The table below summarises data from news articles collected on Wikipedia about very old bottles with messages that have been found. However, only data on bottles over 25 years old has been collected, presumably because older bottles are more newsworthy.</p>
+<table class="table-striped caption-top table">
+<caption>Data on the age distribution of bottles found. The asterisk (*) indicates an estimated number.</caption>
+<colgroup>
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+<col style="width: 11%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Age of found bottle</th>
+<th>0–25 yrs</th>
+<th>25–50 yrs</th>
+<th>50–75 yrs</th>
+<th>75–100 yrs</th>
+<th>100–125 yrs</th>
+<th>125–150 yrs</th>
+<th>150–175 yrs</th>
+<th>175–200 yrs</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bottles found</td>
+<td>46*</td>
+<td>23</td>
+<td>10</td>
+<td>15</td>
+<td>7</td>
+<td>3</td>
+<td>1</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+<p>So, we needed to estimate the number of 0- to 25-year-old bottles with messages ourselves.</p>
+<p>The table shows that fewer bottles with messages are found as they get older. Messages in bottles degrade over time, which means the bottles have an increased chance of breaking and sinking, or just getting covered in layers of sediment. Plotting this data helped us see the trend in the ages of found bottles more clearly.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="trend-line.png" class="img-fluid figure-img" alt="Scatter plot of number of bottles found against age of bottle in years, from 25 to 200. The counts decline from 46 at 25 years down to 1 at 200 years, with a smooth red curve fitted through the points; the estimated point at 25 years is circled."></p>
+<figcaption>Trend in the ages of bottles found, with a fitted curve used to estimate the 0- to 25-year count (circled).</figcaption>
+</figure>
+</div>
+<p>We drew a line to match this observed trend in the ages of found bottles. This red line in the graph corresponds to the equation:</p>
+<p><span class="math display">\[
+\text{Bottles} = 80 \times 0.978^{\text{age}}
+\]</span></p>
+<p>This equation provides an estimate of how many bottles have been found for any specific age range (where 25 = 0-to-25, 50 = 25-to-50 and so on). We are interested in the 0- to 25-year-old bottles, so the equation suggests 46 bottles have been found in this range (the circled point).</p>
+<p>Adding up this estimate and all of the numbers in the table gives a total of 106 bottles found, of which 12 are over 100 years old, and <span class="math inline">\(12/106\)</span> is about one in ten.</p>
+</section>
+<section id="bringing-it-together" class="level2">
+<h2 class="anchored" data-anchor-id="bringing-it-together">Bringing it together</h2>
+<p>Recapping the above, we have that: (A) one in ten bottles with messages are found, of which (B) one in ten are over 100 years old. Bringing these results together using the multiplication rule, we estimate the chance of a message in a bottle being found and it being over 100 years old to be <span class="math inline">\((1/10) \times (1/10) = 1/100\)</span>.</p>
+<p>So, if there are 100,000 bottles with messages floating around the oceans waiting to be found, we’d expect 1,000 of these to be found and be 100 or more years old. Assuming anybody in the world is equally likely to find one of these, with 8 billion people currently, that’s about a one in 8 million chance of you finding one — pretty unlikely.</p>
+<p>However, some people are more persistent at message-in-a-bottle hunting than others. Following the paths of ocean currents (known as gyres) could provide clues on where to look. Specifically, peninsulas or islands intersecting with these gyres could be good spots. For this reason, it has been suggested the Caribbean islands are ideally placed for finding bottles as they lie on the path of the North Atlantic Gyre. Which seems like a great reason to travel to the Caribbean!</p>
+<p>But let’s also spare a thought for the poor soul stranded on their desert island, who surely won’t appreciate the low odds of their SOS being found.</p>
+<hr>
+<p>DOI <a href="https://doi.org/10.64628/AB.c3gmg5xn6">10.64628/AB.c3gmg5xn6</a></p>
 
 
 </section>
