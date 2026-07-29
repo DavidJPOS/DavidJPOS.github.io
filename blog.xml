@@ -32,5 +32,25 @@
   <guid>https://DavidJPOS.github.io/posts/2025/2025_02_25 Caroline worth an ECMI blog.html</guid>
   <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
 </item>
+<item>
+  <title>ECMI blog on how to collect data from Twitter</title>
+  <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
+  <link>https://DavidJPOS.github.io/posts/2025/2015_12_21 ECMI blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post <a href="https://ecmiindmath.org/2015/12/21/hunting-for-ground-truths/">here</a>.</p>
+
+
+
+ ]]></description>
+  <category>networks</category>
+  <category>ECMI blog</category>
+  <category>API</category>
+  <guid>https://DavidJPOS.github.io/posts/2025/2015_12_21 ECMI blog.html</guid>
+  <pubDate>Mon, 21 Dec 2015 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
