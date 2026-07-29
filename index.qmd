@@ -13,7 +13,7 @@ about:
       href: https://pure.ul.ie/en/persons/david-osullivan/
     - icon: linkedin
       href: https://www.linkedin.com/in/david-o-sullivan-8980a59b/
-      aria-label: LinkedIn
+      text: LinkedIn
 ---
 
 <!-- - icon: envelope -->
@@ -44,8 +44,8 @@ My research focuses on the science of social networks. I develop analytical tool
 **PhD in Applied Mathematics & Statistics** · University of Limerick (2013–2017)
 : *Dynamics of Behaviour & Information Diffusion on Complex Networks: Analytical and Empirical Perspectives.* Supervisors: Prof. James Gleeson & Dr. Mariano Beguerisse-Díaz.
 
-**BSc in Financial Mathematics & Actuarial Science** · University College Cork
-: Second Class Honours, Grade 1.
+<!-- **BSc in Financial Mathematics & Actuarial Science** · University College Cork -->
+<!-- : Second Class Honours, Grade 1. -->
 
 ## Experience
 
