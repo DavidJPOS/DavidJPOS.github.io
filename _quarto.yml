@@ -5,7 +5,7 @@ project:
 website:
   title: "David J.P. O'Sullivan"
   description: "Associate Professor in Statistics and Data Analytics, University of Limerick"
-  site-url: https://example.com  # ← replace with your actual URL (e.g. GitHub Pages)
+  site-url: https://DavidJPOS.github.io/  # ← replace with your actual URL (e.g. GitHub Pages)
   navbar:
     pinned: true
     left:
