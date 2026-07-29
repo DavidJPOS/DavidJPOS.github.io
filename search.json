@@ -98,50 +98,50 @@
     "text": "2015\n\nD.J.P. O’Sullivan, G.J. O’Keeffe, P.G. Fennell & J.P. Gleeson (2015). Mathematical modelling of complex contagion on clustered networks. Frontiers in Physics, 3, 71. Featured on journal homepage Open Access"
   },
   {
-    "objectID": "posts/2026-message-in-a-bottle/index.html",
-    "href": "posts/2026-message-in-a-bottle/index.html",
+    "objectID": "posts/2026-04-13-message-in-a-bottle/index.html",
+    "href": "posts/2026-04-13-message-in-a-bottle/index.html",
     "title": "What is the chance of a message in a bottle being found?",
     "section": "",
     "text": "This piece was co-written with Kevin Burke and originally published on The Conversation. You can read the original there.\nRecently, a cheerful 100-year-old message in a bottle was found on the south-west coast of Australia. In it, a world war one soldier proclaimed to be “as happy as Larry”.\nIf you’re a betting person, you probably wouldn’t expect great odds of this happening. A bottle cast into the ocean could end up absolutely anywhere.\nIf it floats to a remote location, there is little chance of somebody stumbling upon it. And if it lands somewhere more favourable where people could potentially find it, there are other issues. The message itself will deteriorate over time as light degrades it. If the bottle fills with water, it will sink and almost certainly never be found.\nSo, what are the chances of a message in a bottle being found and it being over 100? And what are your chances of finding this bottle?"
   },
   {
-    "objectID": "posts/2026-message-in-a-bottle/index.html#a-straightforward-calculation",
-    "href": "posts/2026-message-in-a-bottle/index.html#a-straightforward-calculation",
+    "objectID": "posts/2026-04-13-message-in-a-bottle/index.html#a-straightforward-calculation",
+    "href": "posts/2026-04-13-message-in-a-bottle/index.html#a-straightforward-calculation",
     "title": "What is the chance of a message in a bottle being found?",
     "section": "A straightforward calculation",
     "text": "A straightforward calculation\nDespite these many possibilities during a bottle’s lifetime, the probability we are after is a straightforward calculation. Just count up the number of bottles with messages that have been found and are over 100 years old, and divide by the number of messages that have been sent this way (assuming we know how many are sent):\n\\[\n\\frac{\\text{Bottles Found Over 100}}{\\text{Total Bottles}}.\n\\]\nOur diagram below shows a hypothetical situation where 20 bottles are sent in total, of which six are found (shown in gold) and one of these is over 100 years old (marked “100”). So, one in 20 bottles are found and over 100 years old. (Note: this is only a hypothetical calculation, not the real data.)\n\n\n\nHypothetical bottle data: 20 bottles sent, six found (gold), one of the found bottles over 100 years old."
   },
   {
-    "objectID": "posts/2026-message-in-a-bottle/index.html#splitting-the-problem-in-two",
-    "href": "posts/2026-message-in-a-bottle/index.html#splitting-the-problem-in-two",
+    "objectID": "posts/2026-04-13-message-in-a-bottle/index.html#splitting-the-problem-in-two",
+    "href": "posts/2026-04-13-message-in-a-bottle/index.html#splitting-the-problem-in-two",
     "title": "What is the chance of a message in a bottle being found?",
     "section": "Splitting the problem in two",
     "text": "Splitting the problem in two\nInstead of calculating the probability directly, another way to do it is by breaking the problem into two parts: (A) a bottle with a message is found, and (B) the found bottle is over 100. These two probabilities can be calculated separately and multiplied together to get what we want:\n\\[\n\\frac{\\text{Bottles Found}}{\\text{Total Bottles}} \\times \\frac{\\text{Bottles Found Over 100}}{\\text{Bottles Found}} = \\frac{\\text{Bottles Found Over 100}}{\\text{Total Bottles}}.\n\\]\nThis is known as the “multiplication rule” of probability, and we confirm from our hypothetical numbers that \\((6/20) \\times (1/6) = 1/20\\), as before.\nBoth approaches to calculating this probability are simple. However, the direct calculation requires knowing the total number of bottles sent out, which is very difficult to know in the real world.\nThe multiplication rule has the advantage that it breaks the calculation into two parts. We can tackle each separately, then bring the two results together to get the probability we want. This is useful in the real-world situation where we can draw information from different sources."
   },
   {
-    "objectID": "posts/2026-message-in-a-bottle/index.html#part-a-the-chance-a-bottle-is-found-at-all",
-    "href": "posts/2026-message-in-a-bottle/index.html#part-a-the-chance-a-bottle-is-found-at-all",
+    "objectID": "posts/2026-04-13-message-in-a-bottle/index.html#part-a-the-chance-a-bottle-is-found-at-all",
+    "href": "posts/2026-04-13-message-in-a-bottle/index.html#part-a-the-chance-a-bottle-is-found-at-all",
     "title": "What is the chance of a message in a bottle being found?",
     "section": "Part A: the chance a bottle is found at all",
     "text": "Part A: the chance a bottle is found at all\nFirst, we’ll deal with the probability that a bottle with a message is found, irrespective of its age.\nExperts from the Federal Maritime and Hydrographic Agency of Germany suggest a one in ten chance that a message in a bottle will be found. This aligns broadly with various historical “drift bottle” experiments, where oceanographers released large numbers of bottles to understand ocean currents.\nFor example, studies from the 1960s and ’70s in the North Atlantic Ocean led to recovery rates of 14% from the Gulf of Mexico, 8% from the Caribbean Sea and 7% from the northern Brazilian coast. A more recent and more northerly study (between Canada and Greenland) from the 2000s led to a 5% recovery rate.\nWe would expect the results to vary naturally from different experiments in different parts of the world. But to keep things simple, we will stick with 1/10 as the probability that a bottle with a message is found."
   },
   {
-    "objectID": "posts/2026-message-in-a-bottle/index.html#part-b-the-chance-a-found-bottle-is-over-100-years-old",
-    "href": "posts/2026-message-in-a-bottle/index.html#part-b-the-chance-a-found-bottle-is-over-100-years-old",
+    "objectID": "posts/2026-04-13-message-in-a-bottle/index.html#part-b-the-chance-a-found-bottle-is-over-100-years-old",
+    "href": "posts/2026-04-13-message-in-a-bottle/index.html#part-b-the-chance-a-found-bottle-is-over-100-years-old",
     "title": "What is the chance of a message in a bottle being found?",
     "section": "Part B: the chance a found bottle is over 100 years old",
     "text": "Part B: the chance a found bottle is over 100 years old\nNow for the second piece of the calculation: of the bottles that are found, what proportion are over 100 years old?\nThe table below summarises data from news articles collected on Wikipedia about very old bottles with messages that have been found. However, only data on bottles over 25 years old has been collected, presumably because older bottles are more newsworthy.\n\nData on the age distribution of bottles found. The asterisk (*) indicates an estimated number.\n\n\n\n\n\n\n\n\n\n\n\n\n\nAge of found bottle\n0–25 yrs\n25–50 yrs\n50–75 yrs\n75–100 yrs\n100–125 yrs\n125–150 yrs\n150–175 yrs\n175–200 yrs\n\n\n\n\nBottles found\n46*\n23\n10\n15\n7\n3\n1\n1\n\n\n\nSo, we needed to estimate the number of 0- to 25-year-old bottles with messages ourselves.\nThe table shows that fewer bottles with messages are found as they get older. Messages in bottles degrade over time, which means the bottles have an increased chance of breaking and sinking, or just getting covered in layers of sediment. Plotting this data helped us see the trend in the ages of found bottles more clearly.\n\n\n\nTrend in the ages of bottles found, with a fitted curve used to estimate the 0- to 25-year count (circled).\n\n\nWe drew a line to match this observed trend in the ages of found bottles. This red line in the graph corresponds to the equation:\n\\[\n\\text{Bottles} = 80 \\times 0.978^{\\text{age}}\n\\]\nThis equation provides an estimate of how many bottles have been found for any specific age range (where 25 = 0-to-25, 50 = 25-to-50 and so on). We are interested in the 0- to 25-year-old bottles, so the equation suggests 46 bottles have been found in this range (the circled point).\nAdding up this estimate and all of the numbers in the table gives a total of 106 bottles found, of which 12 are over 100 years old, and \\(12/106\\) is about one in ten."
   },
   {
-    "objectID": "posts/2026-message-in-a-bottle/index.html#bringing-it-together",
-    "href": "posts/2026-message-in-a-bottle/index.html#bringing-it-together",
+    "objectID": "posts/2026-04-13-message-in-a-bottle/index.html#bringing-it-together",
+    "href": "posts/2026-04-13-message-in-a-bottle/index.html#bringing-it-together",
     "title": "What is the chance of a message in a bottle being found?",
     "section": "Bringing it together",
     "text": "Bringing it together\nRecapping the above, we have that: (A) one in ten bottles with messages are found, of which (B) one in ten are over 100 years old. Bringing these results together using the multiplication rule, we estimate the chance of a message in a bottle being found and it being over 100 years old to be \\((1/10) \\times (1/10) = 1/100\\).\nSo, if there are 100,000 bottles with messages floating around the oceans waiting to be found, we’d expect 1,000 of these to be found and be 100 or more years old. Assuming anybody in the world is equally likely to find one of these, with 8 billion people currently, that’s about a one in 8 million chance of you finding one — pretty unlikely.\nHowever, some people are more persistent at message-in-a-bottle hunting than others. Following the paths of ocean currents (known as gyres) could provide clues on where to look. Specifically, peninsulas or islands intersecting with these gyres could be good spots. For this reason, it has been suggested the Caribbean islands are ideally placed for finding bottles as they lie on the path of the North Atlantic Gyre. Which seems like a great reason to travel to the Caribbean!\nBut let’s also spare a thought for the poor soul stranded on their desert island, who surely won’t appreciate the low odds of their SOS being found.\n\nDOI 10.64628/AB.c3gmg5xn6"
   },
   {
-    "objectID": "posts/2025-ecmi-abortion-referendum/index.html",
-    "href": "posts/2025-ecmi-abortion-referendum/index.html",
+    "objectID": "posts/2025-02-25-ecmi-abortion-referendum/index.html",
+    "href": "posts/2025-02-25-ecmi-abortion-referendum/index.html",
     "title": "ECMI blog on our work",
     "section": "",
     "text": "Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post here.\nThe paper in question can be found here."
@@ -182,22 +182,22 @@
     "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGooooooal! How many goals will be scored at World Cup 2026?\n\n\n\nWorld Cup 2026\n\nBrainstorm article\n\nPhD Students\n\n\n\nMy PhD students wrote a thing: How many goals will be scored at World Cup 2026?\n\n\n\n\n\nJun 23, 2026\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the chance of a message in a bottle being found?\n\n\n\nThe Conversation\n\nProbability\n\nPublic Engagement\n\n\n\nCo-written with Kevin Burke: working out the odds that a message in a bottle is found, and found over 100 years later.\n\n\n\n\n\nApr 13, 2026\n\n\nDavid J.P. O’Sullivan & Kevin Burke\n\n\n\n\n\n\n\n\n\n\n\n\nWhat 499,642 tweets tell us about the 2015 marriage equality referendum\n\n\n\nBrainstorm article\n\nPhD Student\n\nIrish Marraige referndum\n\nnetworks\n\n\n\nMy PhD students wrote a thing on our work on hte Irish Marrage referendum\n\n\n\n\n\nMay 22, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on our work\n\n\n\nnews\n\nnetworks\n\nECMI blog\n\n\n\nMy PhD student, Caroline Pena, work a thing.\n\n\n\n\n\nFeb 25, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on how to collect data from Twitter\n\n\n\nnetworks\n\nECMI blog\n\nAPI\n\n\n\nUsing the Twitter API to collect data.\n\n\n\n\n\nDec 21, 2015\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/2015-ecmi-twitter-api/index.html",
-    "href": "posts/2015-ecmi-twitter-api/index.html",
+    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html",
+    "href": "posts/2015-12-21-ecmi-twitter-api/index.html",
     "title": "ECMI blog on how to collect data from Twitter",
     "section": "",
     "text": "Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post here."
   },
   {
-    "objectID": "posts/2025-marriage-referendum-tweets/index.html",
-    "href": "posts/2025-marriage-referendum-tweets/index.html",
+    "objectID": "posts/2025-05-22-marriage-referendum-tweets/index.html",
+    "href": "posts/2025-05-22-marriage-referendum-tweets/index.html",
     "title": "What 499,642 tweets tell us about the 2015 marriage equality referendum",
     "section": "",
     "text": "Dear reader, one of my PhD students, Caroline, wrote a very nice article about some of our work on how information spread around the Irish Marriage referendum, find it here."
   },
   {
-    "objectID": "posts/2026-world-cup-goals/index.html",
-    "href": "posts/2026-world-cup-goals/index.html",
+    "objectID": "posts/2026-06-23-world-cup-goals/index.html",
+    "href": "posts/2026-06-23-world-cup-goals/index.html",
     "title": "Gooooooal! How many goals will be scored at World Cup 2026?",
     "section": "",
     "text": "Dear reader, two of my PhD students, Ronan Lynch and Noel O’Gorman, wrote a very nice article for Brainstorm about the probable number of goals that will be scored over the soccer World Cup 2026. You can find it here."

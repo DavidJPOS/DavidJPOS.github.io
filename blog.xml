@@ -14,7 +14,7 @@
 <item>
   <title>Gooooooal! How many goals will be scored at World Cup 2026?</title>
   <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
-  <link>https://DavidJPOS.github.io/posts/2026-world-cup-goals/</link>
+  <link>https://DavidJPOS.github.io/posts/2026-06-23-world-cup-goals/</link>
   <description><![CDATA[ 
 
 
@@ -28,13 +28,13 @@
   <category>World Cup 2026</category>
   <category>Brainstorm article</category>
   <category>PhD Students</category>
-  <guid>https://DavidJPOS.github.io/posts/2026-world-cup-goals/</guid>
+  <guid>https://DavidJPOS.github.io/posts/2026-06-23-world-cup-goals/</guid>
   <pubDate>Mon, 22 Jun 2026 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What is the chance of a message in a bottle being found?</title>
   <dc:creator>David J.P. O&#39;Sullivan &amp; Kevin Burke</dc:creator>
-  <link>https://DavidJPOS.github.io/posts/2026-message-in-a-bottle/</link>
+  <link>https://DavidJPOS.github.io/posts/2026-04-13-message-in-a-bottle/</link>
   <description><![CDATA[ 
 
 
@@ -52,7 +52,7 @@
 <p>Our diagram below shows a hypothetical situation where 20 bottles are sent in total, of which six are found (shown in gold) and one of these is over 100 years old (marked “100”). So, one in 20 bottles are found and over 100 years old. (Note: this is only a hypothetical calculation, not the real data.)</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://DavidJPOS.github.io/posts/2026-message-in-a-bottle/hypothetical-bottles.png" class="img-fluid figure-img" alt="A grid of 20 bottle icons; six are filled gold to represent bottles that were found, and two of those are labelled 100 to represent bottles found that are over 100 years old."></p>
+<p><img src="https://DavidJPOS.github.io/posts/2026-04-13-message-in-a-bottle/hypothetical-bottles.png" class="img-fluid figure-img" alt="A grid of 20 bottle icons; six are filled gold to represent bottles that were found, and two of those are labelled 100 to represent bottles found that are over 100 years old."></p>
 <figcaption>Hypothetical bottle data: 20 bottles sent, six found (gold), one of the found bottles over 100 years old.</figcaption>
 </figure>
 </div>
@@ -120,7 +120,7 @@
 <p>The table shows that fewer bottles with messages are found as they get older. Messages in bottles degrade over time, which means the bottles have an increased chance of breaking and sinking, or just getting covered in layers of sediment. Plotting this data helped us see the trend in the ages of found bottles more clearly.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><img src="https://DavidJPOS.github.io/posts/2026-message-in-a-bottle/trend-line.png" class="img-fluid figure-img" alt="Scatter plot of number of bottles found against age of bottle in years, from 25 to 200. The counts decline from 46 at 25 years down to 1 at 200 years, with a smooth red curve fitted through the points; the estimated point at 25 years is circled."></p>
+<p><img src="https://DavidJPOS.github.io/posts/2026-04-13-message-in-a-bottle/trend-line.png" class="img-fluid figure-img" alt="Scatter plot of number of bottles found against age of bottle in years, from 25 to 200. The counts decline from 46 at 25 years down to 1 at 200 years, with a smooth red curve fitted through the points; the estimated point at 25 years is circled."></p>
 <figcaption>Trend in the ages of bottles found, with a fitted curve used to estimate the 0- to 25-year count (circled).</figcaption>
 </figure>
 </div>
@@ -145,13 +145,13 @@
   <category>The Conversation</category>
   <category>Probability</category>
   <category>Public Engagement</category>
-  <guid>https://DavidJPOS.github.io/posts/2026-message-in-a-bottle/</guid>
+  <guid>https://DavidJPOS.github.io/posts/2026-04-13-message-in-a-bottle/</guid>
   <pubDate>Sun, 12 Apr 2026 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>What 499,642 tweets tell us about the 2015 marriage equality referendum</title>
   <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
-  <link>https://DavidJPOS.github.io/posts/2025-marriage-referendum-tweets/</link>
+  <link>https://DavidJPOS.github.io/posts/2025-05-22-marriage-referendum-tweets/</link>
   <description><![CDATA[ 
 
 
@@ -166,13 +166,13 @@
   <category>PhD Student</category>
   <category>Irish Marraige referndum</category>
   <category>networks</category>
-  <guid>https://DavidJPOS.github.io/posts/2025-marriage-referendum-tweets/</guid>
+  <guid>https://DavidJPOS.github.io/posts/2025-05-22-marriage-referendum-tweets/</guid>
   <pubDate>Wed, 21 May 2025 23:00:00 GMT</pubDate>
 </item>
 <item>
   <title>ECMI blog on our work</title>
   <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
-  <link>https://DavidJPOS.github.io/posts/2025-ecmi-abortion-referendum/</link>
+  <link>https://DavidJPOS.github.io/posts/2025-02-25-ecmi-abortion-referendum/</link>
   <description><![CDATA[ 
 
 
@@ -187,13 +187,13 @@
   <category>news</category>
   <category>networks</category>
   <category>ECMI blog</category>
-  <guid>https://DavidJPOS.github.io/posts/2025-ecmi-abortion-referendum/</guid>
+  <guid>https://DavidJPOS.github.io/posts/2025-02-25-ecmi-abortion-referendum/</guid>
   <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
 </item>
 <item>
   <title>ECMI blog on how to collect data from Twitter</title>
   <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
-  <link>https://DavidJPOS.github.io/posts/2015-ecmi-twitter-api/</link>
+  <link>https://DavidJPOS.github.io/posts/2015-12-21-ecmi-twitter-api/</link>
   <description><![CDATA[ 
 
 
@@ -207,7 +207,7 @@
   <category>networks</category>
   <category>ECMI blog</category>
   <category>API</category>
-  <guid>https://DavidJPOS.github.io/posts/2015-ecmi-twitter-api/</guid>
+  <guid>https://DavidJPOS.github.io/posts/2015-12-21-ecmi-twitter-api/</guid>
   <pubDate>Mon, 21 Dec 2015 00:00:00 GMT</pubDate>
 </item>
 </channel>
