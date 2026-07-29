@@ -1,0 +1,28 @@
+---
+title: "Teaching"
+---
+
+::: {.eyebrow}
+MODULES · SUPERVISION
+:::
+
+<!-- ← Replace with your actual modules. The structure below is a suggested layout. -->
+
+## Current modules
+
+**MSXXXX — Statistics & Data Analytics**
+: Semester 1 · Undergraduate. Brief one-line description of the module.
+
+**MSXXXX — Networks / Applied Statistics**
+: Semester 2 · Postgraduate. Brief one-line description of the module.
+
+## Postgraduate supervision
+
+I am **currently accepting PhD students** in network science, complex contagion, and computational social science. Prospective students should email me with a CV and a short statement of research interests.
+
+<!-- Optional: list current and past PhD/MSc students here -->
+
+## Final-year & MSc projects
+
+<!-- Optional: describe the kinds of projects you offer, with examples -->
+Project topics typically involve social network data, diffusion modelling, or applied statistical analysis for industry partners through MACSI.

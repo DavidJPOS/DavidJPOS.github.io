@@ -1,0 +1,35 @@
+---
+title: "Research"
+---
+
+::: {.eyebrow}
+NETWORKS · DISEASE CONTAGION · SOCIAL CONTAGION · COMPUTATIONAL SOCIAL SCIENCE
+:::
+
+My primary research focuses on the science of social networks, such as Facebook or Twitter/X. I develop analytical and computational tools across four connected strands:
+
+## Structure and spreading
+
+How does network structure affect the spread of information and behaviour? Does fake news spread differently than a virus like COVID-19? I use generating-function methods, multitype branching processes, and simulation to model simple and complex contagion on clustered networks (including practical questions such as the effectiveness of contact tracing when networks contain cliques).
+
+**Related work:** *A generating-function approach to modelling complex contagion on clustered networks* (J. Complex Networks, 2023); *Effectiveness of contact tracing on networks with cliques* (Phys. Rev. E, 2024); *Modeling diffusion in networks with communities* (Phys. Rev. E, 2025).
+
+## Emergence of behaviour on networks
+
+What social mechanisms allow different behaviours to emerge and stabilise on networks? I study how local interaction rules aggregate into population-level phenomena.
+
+## Networks and public deliberation
+
+Social networks both shape and reflect online and real-world debate around public deliberative processes. A running theme in my work is the Irish referendum context, for example, the polarised opinion groups that formed on Twitter/X around the marriage and abortion referendums, and how information diffused within and between those groups.
+
+**Related work:** *Finding polarized communities and tracking information diffusion on Twitter: A network approach on the Irish Abortion Referendum* (R. Soc. Open Sci., 2025).
+
+## Identifying attitude groups
+
+Networks can be used to identify groups holding differing attitudes from behavioural and survey data, connecting network methods with social psychology.
+
+## Applied statistics for industry
+
+Through MACSI, I am keenly interested in the application of statistical methods to real-world problems for industry. If you have an industry problem that could benefit from statistical or network modelling, I'd be glad to hear from you.
+
+<!-- Optional: add a "Current projects" or "Group members / PhD students" section here -->

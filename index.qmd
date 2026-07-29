@@ -1,0 +1,78 @@
+---
+title: "David J.P. O'Sullivan"
+about:
+  template: trestles
+  image: assets/profile.jpg   # ← add your photo here (e.g. download from your Pure profile)
+  image-shape: round
+  links:
+    - text: "{{< ai orcid >}} ORCID"
+      href: https://orcid.org/0000-0002-4754-3614
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: "https://scholar.google.com/citations?user=6_MaPZ8AAAAJ"
+    - text: "{{< ai pure >}} UL Pure Profile"
+      href: https://pure.ul.ie/en/persons/david-osullivan/
+    - icon: linkedin
+      href: https://www.linkedin.com/in/david-o-sullivan-8980a59b/
+      aria-label: LinkedIn
+---
+
+<!-- - icon: envelope -->
+<!--   text: Email -->
+<!--   href: "mailto:David.OSullivan@ul.ie" -->
+
+
+::: {.eyebrow}
+ASSOCIATE PROFESSOR · STATISTICS & DATA ANALYTICS
+:::
+
+I am an Associate Professor in the [Department of Mathematics and Statistics](https://www.ul.ie/scieng/schools-and-departments/department-mathematics-and-statistics) at the University of Limerick, and a member of the [Mathematics Applications Consortium for Science and Industry (MACSI)](https://ulsites.ul.ie/macsi/).
+
+My research focuses on the science of social networks. I develop analytical tools to understand how network structure affects the spread of information and behaviour --- for example, whether fake news spreads differently than a virus --- the social mechanisms behind the emergence of behaviours on networks, and how online networks shape and reflect public deliberation, such as the polarised opinion groups that formed around Irish referendums on Twitter/X. I am also keenly interested in applying statistical methods to real-world industry problems.
+
+<!-- **I am currently accepting PhD students.** If you are interested in networks, complex contagion, or computational social science, please [get in touch](mailto:David.OSullivan@ul.ie). -->
+
+## Interests
+
+- Social network analysis & community detection
+- Complex contagion and information diffusion
+- Branching process models on networks
+- Computational social science
+- Applied statistics for industry
+
+## Education
+
+**PhD in Applied Mathematics & Statistics** · University of Limerick (2013–2017)
+: *Dynamics of Behaviour & Information Diffusion on Complex Networks: Analytical and Empirical Perspectives.* Supervisors: Prof. James Gleeson & Dr. Mariano Beguerisse-Díaz.
+
+**BSc in Financial Mathematics & Actuarial Science** · University College Cork
+: Second Class Honours, Grade 1.
+
+## Experience
+
+<!--
+  ← To hide this whole Experience section, either delete everything from the
+  "## Experience" heading down to (but not including) the "## News" heading,
+  or comment it out by wrapping it in an HTML comment: put "<!- -" (without the
+  space) on the line above the heading and "- ->" (without the space) on the
+  line below the last entry.
+-->
+
+**Associate Professor of Statistics & Data Analytics** · University of Limerick · 2020–present
+: Developing mathematical and statistical tools for the analysis of large social systems.
+
+**Visiting Researcher** · BT Ireland Innovation Centre, University of Ulster · 2020–2024
+: Flexible statistical methods to detect deterioration in model performance and automate retraining.
+
+**Post-doctoral Researcher** · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019
+: Network science research in collaboration with Emirates airline (Supervisor: Prof. Peter Grindrod).
+
+**Post-doctoral Researcher & Statistical Consultant** · Industrial Mathematics Unit, University of Limerick · 2017–2018
+: Building industry collaborations and continuing network science research (Supervisor: Dr. Kevin Burke).
+
+<!-- ## News -->
+
+<!-- <!-- A simple reverse-chronological news list; prune or extend as you like --> -->
+
+<!-- - **Mar 2025** — New paper in *Physical Review E*: multitype branching process models for diffusion in networks with communities. -->
+<!-- - **Feb 2025** — Work on neural network interpretability presented at **WACV 2025**. -->
+<!-- - **Jan 2025** — New paper in *Royal Society Open Science* on polarised communities in the Irish abortion referendum debate on Twitter. -->

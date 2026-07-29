@@ -1,0 +1,210 @@
+/*-- scss:defaults --*/
+
+// ------- Palette: "ink & teal" -------
+// Cool paper, dark slate ink, deep teal accent (nods to network/data viz
+// palettes rather than the usual academic blue).
+$ink:        #212B33;
+$paper:      #FBFCFC;
+$teal:       #135E63;
+$teal-dark:  #0C4448;
+$slate:      #5C6B76;
+$hairline:   #DDE4E6;
+
+$body-bg: $paper;
+$body-color: $ink;
+$link-color: $teal;
+$link-hover-color: $teal-dark;
+
+// ------- Type: IBM Plex family -------
+// Plex Serif for headings, Plex Sans for body, Plex Mono for the small
+// "metadata" labels — a nod to statistical computing.
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "IBM Plex Sans", -apple-system, sans-serif;
+$headings-font-family: "IBM Plex Serif", Georgia, serif;
+$font-family-monospace: "IBM Plex Mono", monospace;
+
+$headings-font-weight: 600;
+$navbar-bg: $paper;
+$navbar-fg: $ink;
+$footer-bg: $paper;
+
+/*-- scss:rules --*/
+
+body {
+  font-size: 1.02rem;
+  line-height: 1.65;
+}
+
+h1, h2, h3 {
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  margin-top: 2.2rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 1px solid $hairline;
+  font-size: 1.45rem;
+}
+
+// Navbar: quiet, hairline-separated
+.navbar {
+  border-bottom: 1px solid $hairline;
+  font-family: $font-family-monospace;
+  font-size: 0.86rem;
+  letter-spacing: 0.02em;
+  .navbar-brand {
+    font-family: $headings-font-family;
+    font-size: 1.15rem;
+    letter-spacing: 0;
+  }
+  .nav-link:hover { color: $teal !important; }
+}
+
+// Signature element: monospace "eyebrow" labels with a node-and-edge mark,
+// echoing the network-science subject matter.
+.eyebrow {
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  color: $teal;
+  margin-bottom: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+
+  &::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: $teal;
+    box-shadow: 18px 0 0 -2px rgba($teal, 0.45),
+                34px 0 0 -3px rgba($teal, 0.2);
+    margin-right: 34px;
+    flex-shrink: 0;
+  }
+}
+
+// Publication entries
+.pub {
+  padding: 0.75rem 0 0.75rem 1rem;
+  border-left: 2px solid $hairline;
+  margin-bottom: 0.9rem;
+  transition: border-color 0.15s ease;
+
+  &:hover { border-left-color: $teal; }
+
+  strong { color: $ink; }
+  em { color: $slate; font-style: italic; }
+}
+
+// Featured publication card
+.featured-pub {
+  position: relative;
+  padding: 1.4rem 1.5rem;
+  margin: 0.5rem 0 2rem;
+  background: rgba($teal, 0.04);
+  border: 1px solid rgba($teal, 0.22);
+  border-radius: 6px;
+
+  .featured-label {
+    font-family: $font-family-monospace;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $teal;
+    margin-bottom: 0.6rem;
+  }
+
+  strong { color: $ink; }
+  em { color: $slate; font-style: italic; }
+}
+
+.badge {
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: $teal;
+  background: rgba($teal, 0.08);
+  border: 1px solid rgba($teal, 0.25);
+  border-radius: 3px;
+  padding: 0.1rem 0.45rem;
+  vertical-align: middle;
+}
+
+// Linkable "extras" chips (media coverage, open data, outreach).
+// Distinct from .badge (which flags honours like Open Access / Editors' Suggestion):
+// tags are clickable pills with a small outbound arrow.
+.pub-tags {
+  display: block;
+  margin-top: 0.55rem;
+  line-height: 2;
+}
+
+.tag {
+  display: inline-block;
+  font-family: $font-family-monospace;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  color: $slate;
+  background: $paper;
+  border: 1px solid $hairline;
+  border-radius: 3px;
+  padding: 0.1rem 0.45rem;
+  margin: 0 0.25rem 0.1rem 0;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: color 0.15s ease, border-color 0.15s ease, background 0.15s ease;
+
+  &::after {
+    content: " \2197";  // ↗ outbound arrow
+    font-size: 0.62rem;
+    opacity: 0.7;
+  }
+}
+
+a.tag:hover {
+  color: $teal;
+  border-color: $teal;
+  background: rgba($teal, 0.06);
+}
+
+// About page (trestles template) tweaks
+div.quarto-about-trestles {
+  .about-entity {
+    .about-link {
+      font-family: $font-family-monospace;
+      font-size: 0.8rem;
+      border-color: $hairline;
+      &:hover { border-color: $teal; color: $teal; }
+    }
+  }
+}
+
+div.quarto-about-trestles .about-image {
+  border: 4px solid $teal;
+  border-radius: 50%;        // keeps the frame itself circular
+  padding: 6px;              // gap between photo and ring
+  background: $paper;        // fills the padding gap
+  box-shadow: 0 2px 12px rgba($ink, 0.08);  // optional soft lift
+}
+
+// Definition lists on the teaching page
+dl dt { font-weight: 600; }
+dl dd { color: $slate; margin-bottom: 0.8rem; }
+
+.page-footer, .nav-footer {
+  border-top: 1px solid $hairline;
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  color: $slate;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

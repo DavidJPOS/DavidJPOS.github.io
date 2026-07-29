@@ -1,0 +1,148 @@
+---
+title: "Publications"
+---
+
+::: {.eyebrow}
+PEER-REVIEWED WORK
+:::
+
+A full, always-current list is on my [Google Scholar](https://scholar.google.com/citations?user=6_MaPZ8AAAAJ) and [UL Pure](https://pure.ul.ie/en/persons/david-osullivan/publications/) profiles. Open-access articles are marked [Open Access]{.badge}; links to media coverage, data, and outreach appear beneath each entry.
+
+:::: {.featured-pub}
+::: {.featured-label}
+★ Featured publication
+:::
+A. Dubovskaya, C.B. Pena & **D.J.P. O'Sullivan** (2025).
+[Modeling diffusion in networks with communities: A multitype branching process approach](https://doi.org/10.1103/PhysRevE.111.034310).
+*Physical Review E*, 111(3), 034310.
+
+A multitype branching process framework for modelling how information and behaviour diffuse through networks with community structure, extending our earlier work to capture the interplay between diffusion dynamics and mesoscale network organisation.
+::::
+
+<!--
+  To add a new entry, follow the same format:
+
+::: {.pub}
+Authors (Year). [Title](DOI link). *Journal*, vol(issue), pages. [Open Access]{.badge}
+
+[[Media/data label](url){.tag}]{.pub-tags}   <!- - optional clickable extras - ->
+:::
+-->
+
+
+## 2025
+
+::: {.pub}
+C.B. Pena, **D.J.P. O'Sullivan**, P. MacCarron & A. Saxena (2025).
+[Dynamics of temporal influence in polarised networks](https://doi.org/10.1371/journal.pone.0337753).
+*PLoS ONE*, 20(12), e0337753. [Open Access]{.badge}
+:::
+
+::: {.pub}
+C.B. Pena, P. MacCarron & **D.J.P. O'Sullivan** (2025).
+[Finding polarized communities and tracking information diffusion on Twitter: A network approach on the Irish Abortion Referendum](https://doi.org/10.1098/rsos.240454).
+*Royal Society Open Science*, 12(1), 240454. [Open Access]{.badge}
+
+[[RTÉ Brainstorm](https://www.rte.ie/brainstorm/2025/0521/1514094-marriage-equality-referendum-twitter-social-media-research-polarisation/){.tag} [ECMI blog](https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/){.tag}]{.pub-tags}
+:::
+
+::: {.pub}
+L. O'Mahony, N.S. Nikolov & **D.J.P. O'Sullivan** (2025).
+Towards Utilising a Range of Neural Activations for Comprehending Representational Associations.
+*2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)*, pp. 2495–2506.
+:::
+
+## 2024
+
+::: {.pub}
+A.K. Rizi, L.A. Keating, J.P. Gleeson, **D.J.P. O'Sullivan** & M. Kivelä (2024).
+[Effectiveness of contact tracing on networks with cliques](https://doi.org/10.1103/PhysRevE.109.024303).
+*Physical Review E*, 109(2), 024303. [Open Access]{.badge}
+:::
+
+## 2023
+
+::: {.pub}
+L.A. Keating, J.P. Gleeson & **D.J.P. O'Sullivan** (2023).
+[A generating-function approach to modelling complex contagion on clustered networks with multi-type branching processes](https://doi.org/10.1093/comnet/cnad042).
+*Journal of Complex Networks*, 11(6), cnad042. [Open Access]{.badge}
+:::
+
+::: {.pub}
+A. Dinkelberg, P. MacCarron, P.J. Maher, **D.J.P. O'Sullivan** & M. Quayle (2023).
+[Dyadic interaction shapes social identity in the Axelrod model using empirical data](https://www.jasss.org/26/2/2.html).
+*Journal of Artificial Societies and Social Simulation*, 26(2). [Open Access]{.badge}
+:::
+
+::: {.pub}
+L. Sprejer, H. Margetts, K. Oliveira, **D.J.P. O'Sullivan** & B. Vidgen (2023).
+[An actor-based approach to understanding radical right viral tweets in the UK](https://doi.org/10.1080/18335330.2022.2086440).
+*Journal of Policing, Intelligence and Counter Terrorism*, 18(2), 139–157.
+
+[[Open data](https://zenodo.org/records/6393085){.tag}]{.pub-tags}
+:::
+
+## 2022
+
+::: {.pub}
+L.A. Keating, J.P. Gleeson & **D.J.P. O'Sullivan** (2022).
+[A multi-type branching process method for modelling complex contagion on clustered networks](https://doi.org/10.1103/PhysRevE.105.034306).
+*Physical Review E*, 105(3), 034306. [Editors' Suggestion]{.badge} [Open Access]{.badge}
+:::
+
+::: {.pub}
+J.P. Gleeson, T. Brendan Murphy, J.D. O'Brien, N. Friel, N. Bargary & **D.J.P. O'Sullivan** (2022).
+[Calibrating COVID-19 susceptible-exposed-infected-removed models with time-varying effective contact rates](https://doi.org/10.1098/rsta.2021.0120).
+*Philosophical Transactions of the Royal Society A*, 380(2214), 20210120. [Invited special issue]{.badge} [Open Access]{.badge}
+:::
+
+## 2021
+
+::: {.pub}
+J.D. O'Brien, J.P. Gleeson & **D.J.P. O'Sullivan** (2021).
+[Identification of skill in an online game: The case of Fantasy Premier League](https://doi.org/10.1371/journal.pone.0246698).
+*PLoS ONE*, 16(3), e0246698. [Open Access]{.badge}
+
+[[The Times](https://www.thetimes.co.uk/article/best-fantasy-football-managers-are-the-special-ones-837qqrfqm){.tag} [Radio interview](https://www.todayfm.com/podcasts/the-last-word-with-matt-cooper/the-secrets-of-fantasy-football-success){.tag}]{.pub-tags}
+:::
+
+::: {.pub}
+A. Dinkelberg, **D.J.P. O'Sullivan**, M. Quayle & P. MacCarron (2021).
+[Detecting opinion-based groups and polarization in survey-based attitude networks and estimating question relevance](https://doi.org/10.1142/S0219525921500065).
+*Advances in Complex Systems*, 24(2), 2150006. [Open Access]{.badge}
+:::
+
+## 2020
+
+::: {.pub}
+J.P. Gleeson, T. Onaga, P. Fennell, J. Cotter, R. Burke & **D.J.P. O'Sullivan** (2020).
+[Branching process descriptions of information cascades on Twitter](https://doi.org/10.1093/comnet/cnab002).
+*Journal of Complex Networks*, 8(6), cnab002. [Open Access]{.badge}
+:::
+
+## 2017
+
+::: {.pub}
+**D.J.P. O'Sullivan**, G. Garduño-Hernández, J.P. Gleeson & M. Beguerisse-Díaz (2017).
+[Integrating sentiment and social structure to determine preference alignments: the Irish Marriage Referendum](https://doi.org/10.1098/rsos.170154).
+*Royal Society Open Science*, 4(7), 170154. [Open Access]{.badge}
+
+[[The Times](https://www.thetimes.co.uk/article/want-to-persuade-opponents-on-social-media-no-one-is-listening-nrwr38zd3){.tag}]{.pub-tags}
+:::
+
+## 2016
+
+::: {.pub}
+P.G. Fennell, **D.J.P. O'Sullivan**, A. Godin & S. Kinsella (2016).
+[Is it possible to visualise any stock flow consistent model as a directed acyclic graph?](https://doi.org/10.1007/s10614-015-9521-8)
+*Computational Economics*, 48(2), 307–316.
+:::
+
+## 2015
+
+::: {.pub}
+**D.J.P. O'Sullivan**, G.J. O'Keeffe, P.G. Fennell & J.P. Gleeson (2015).
+[Mathematical modelling of complex contagion on clustered networks](https://doi.org/10.3389/fphy.2015.00071).
+*Frontiers in Physics*, 3, 71. [Featured on journal homepage]{.badge} [Open Access]{.badge}
+:::
+

@@ -1,0 +1,50 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "David J.P. O'Sullivan"
+  description: "Associate Professor in Statistics and Data Analytics, University of Limerick"
+  site-url: https://example.com  # ← replace with your actual URL (e.g. GitHub Pages)
+  navbar:
+    pinned: true
+    left:
+      - text: "About"
+        href: index.qmd
+      - text: "Research"
+        href: research.qmd
+      - text: "Publications"
+        href: publications.qmd
+      - text: "Teaching"
+        href: teaching.qmd
+      - text: "Blog"
+        href: blog.qmd
+    right:
+      - icon: envelope
+        href: "mailto:David.OSullivan@ul.ie"
+        aria-label: Email
+      - icon: github
+        href: https://github.com/  # ← add your GitHub username
+        aria-label: GitHub
+      - text: "{{< ai orcid >}}"
+        href: https://orcid.org/0000-0002-4754-3614
+      - text: "{{< ai google-scholar >}}"
+        href: "https://scholar.google.com/citations?user=6_MaPZ8AAAAJ"
+  page-footer:
+    left: "© 2026 David J.P. O'Sullivan"
+    center: "Department of Mathematics & Statistics · MACSI · University of Limerick"
+    right: "Built with [Quarto](https://quarto.org)"
+
+format:
+  html:
+    theme:
+      - minty
+      - theme.scss
+    toc: false
+    link-external-newwindow: true
+    page-layout: article
+
+# Requires the academicons extension for ORCID/Scholar icons:
+#   quarto add schochastics/academicons
+# If you'd rather skip the extension, replace the two "{{< ai ... >}}"
+# entries above with plain text like "ORCID" and "Scholar".

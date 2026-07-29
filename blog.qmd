@@ -1,0 +1,19 @@
+---
+title: "Blog"
+listing:
+  contents: posts
+  sort: "date desc"
+  type: default
+  categories: true
+  sort-ui: false
+  filter-ui: false
+  feed: true
+page-layout: full
+title-block-banner: false
+---
+
+::: {.eyebrow}
+NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE
+:::
+
+Occasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I've make a mistake).

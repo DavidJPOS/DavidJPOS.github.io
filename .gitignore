@@ -1,0 +1,19 @@
+# Quarto build artifacts (site is rendered & deployed to the gh-pages branch)
+/.quarto/
+/_site/
+/_freeze/
+*_files/
+*_cache/
+
+# RStudio
+.Rproj.user/
+.Rhistory
+.RData
+.Ruserdata
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Add any private files you don't want published, e.g. a grant/CV PDF:
+# My_Private_CV.pdf
