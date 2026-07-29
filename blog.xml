@@ -10,6 +10,27 @@
 <atom:link href="https://DavidJPOS.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Associate Professor in Statistics and Data Analytics, University of Limerick</description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Wed, 29 Jul 2026 15:45:19 GMT</lastBuildDate>
+<lastBuildDate>Tue, 25 Feb 2025 00:00:00 GMT</lastBuildDate>
+<item>
+  <title>ECMI blog on our work</title>
+  <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
+  <link>https://DavidJPOS.github.io/posts/2025/2025_02_25 Caroline worth an ECMI blog.html</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post <a href="https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/">here</a>.</p>
+<p>The paper in question can be found <a href="https://royalsocietypublishing.org/rsos/article/12/1/240454/92765/Finding-polarized-communities-and-tracking">here</a>.</p>
+
+
+
+ ]]></description>
+  <category>news</category>
+  <category>networks</category>
+  <category>ECMI blog</category>
+  <guid>https://DavidJPOS.github.io/posts/2025/2025_02_25 Caroline worth an ECMI blog.html</guid>
+  <pubDate>Tue, 25 Feb 2025 00:00:00 GMT</pubDate>
+</item>
 </channel>
 </rss>
