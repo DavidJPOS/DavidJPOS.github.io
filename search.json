@@ -98,18 +98,11 @@
     "text": "2015\n\nD.J.P. O’Sullivan, G.J. O’Keeffe, P.G. Fennell & J.P. Gleeson (2015). Mathematical modelling of complex contagion on clustered networks. Frontiers in Physics, 3, 71. Featured on journal homepage Open Access"
   },
   {
-    "objectID": "posts/2025/2015_12_21 ECMI blog.html",
-    "href": "posts/2025/2015_12_21 ECMI blog.html",
-    "title": "ECMI blog on how to collect data from Twitter",
+    "objectID": "posts/2025/2025_02_25 Caroline worth an ECMI blog.html",
+    "href": "posts/2025/2025_02_25 Caroline worth an ECMI blog.html",
+    "title": "ECMI blog on our work",
     "section": "",
-    "text": "Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post here."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on our work\n\n\n\nnews\n\nnetworks\n\nECMI blog\n\n\n\nMy PhD student, Caroline Pena, work a thing.\n\n\n\n\n\nFeb 25, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on how to collect data from Twitter\n\n\n\nnetworks\n\nECMI blog\n\nAPI\n\n\n\nUsing the Twitter API to collect data.\n\n\n\n\n\nDec 21, 2015\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\nNo matching items"
+    "text": "Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post here.\nThe paper in question can be found here."
   },
   {
     "objectID": "index.html",
@@ -140,11 +133,25 @@
     "text": "Experience\n\n\nAssociate Professor of Statistics & Data Analytics · University of Limerick · 2020–present\n\nDeveloping mathematical and statistical tools for the analysis of large social systems.\n\nVisiting Researcher · BT Ireland Innovation Centre, University of Ulster · 2020–2024\n\nFlexible statistical methods to detect deterioration in model performance and automate retraining.\n\nPost-doctoral Researcher · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019\n\nNetwork science research in collaboration with Emirates airline (Supervisor: Prof. Peter Grindrod).\n\nPost-doctoral Researcher & Statistical Consultant · Industrial Mathematics Unit, University of Limerick · 2017–2018\n\nBuilding industry collaborations and continuing network science research (Supervisor: Dr. Kevin Burke).\n\n\n\n\n–&gt;"
   },
   {
-    "objectID": "posts/2025/2025_02_25 Caroline worth an ECMI blog.html",
-    "href": "posts/2025/2025_02_25 Caroline worth an ECMI blog.html",
-    "title": "ECMI blog on our work",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post here.\nThe paper in question can be found here."
+    "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGooooooal! How many goals will be scored at World Cup 2026?\n\n\n\nWorld Cup 2026\n\nBrainstorm article\n\nPhD Students\n\n\n\nHow many goals will be scored at World Cup 2026?\n\n\n\n\n\nJun 23, 2026\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on our work\n\n\n\nnews\n\nnetworks\n\nECMI blog\n\n\n\nMy PhD student, Caroline Pena, work a thing.\n\n\n\n\n\nFeb 25, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on how to collect data from Twitter\n\n\n\nnetworks\n\nECMI blog\n\nAPI\n\n\n\nUsing the Twitter API to collect data.\n\n\n\n\n\nDec 21, 2015\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/2025/2015_12_21 ECMI blog.html",
+    "href": "posts/2025/2015_12_21 ECMI blog.html",
+    "title": "ECMI blog on how to collect data from Twitter",
+    "section": "",
+    "text": "Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post here."
+  },
+  {
+    "objectID": "posts/2025/2026_06_23 Brainstorm Gooooooal.html",
+    "href": "posts/2025/2026_06_23 Brainstorm Gooooooal.html",
+    "title": "Gooooooal! How many goals will be scored at World Cup 2026?",
+    "section": "",
+    "text": "Dear reader, two of my PhD student wrote a nice article for Brainstorm about the probable number of goals that will be scored over the soccor World Cup 2026. You can find it here."
   },
   {
     "objectID": "research.html",
