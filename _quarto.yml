@@ -5,7 +5,7 @@ project:
 website:
   title: "David J.P. O'Sullivan"
   description: "Associate Professor in Statistics and Data Analytics, University of Limerick"
-  site-url: https://DavidJPOS.github.io/  # ← replace with your actual URL (e.g. GitHub Pages)
+  # site-url: https://DavidJPOS.github.io/  # ← replace with your actual URL (e.g. GitHub Pages)
   navbar:
     pinned: true
     left:
@@ -15,16 +15,16 @@ website:
         href: research.qmd
       - text: "Publications"
         href: publications.qmd
-      - text: "Teaching"
-        href: teaching.qmd
+      # - text: "Teaching"
+      #   href: teaching.qmd
       - text: "Blog"
         href: blog.qmd
     right:
-      - icon: envelope
-        href: "mailto:David.OSullivan@ul.ie"
-        aria-label: Email
+      # - icon: envelope
+      #   href: "mailto:David.OSullivan@ul.ie"
+      #   aria-label: Email
       - icon: github
-        href: https://github.com/  # ← add your GitHub username
+        href: https://github.com/DavidJPOS/  # ← add your GitHub username
         aria-label: GitHub
       - text: "{{< ai orcid >}}"
         href: https://orcid.org/0000-0002-4754-3614
