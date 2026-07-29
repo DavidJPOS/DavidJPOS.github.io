@@ -98,6 +98,13 @@
     "text": "2015\n\nD.J.P. O’Sullivan, G.J. O’Keeffe, P.G. Fennell & J.P. Gleeson (2015). Mathematical modelling of complex contagion on clustered networks. Frontiers in Physics, 3, 71. Featured on journal homepage Open Access"
   },
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "David J.P. O’Sullivan",
@@ -124,34 +131,6 @@
     "title": "David J.P. O’Sullivan",
     "section": "Experience",
     "text": "Experience\n\n\nAssociate Professor of Statistics & Data Analytics · University of Limerick · 2020–present\n\nDeveloping mathematical and statistical tools for the analysis of large social systems.\n\nVisiting Researcher · BT Ireland Innovation Centre, University of Ulster · 2020–2024\n\nFlexible statistical methods to detect deterioration in model performance and automate retraining.\n\nPost-doctoral Researcher · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019\n\nNetwork science research in collaboration with Emirates airline (Supervisor: Prof. Peter Grindrod).\n\nPost-doctoral Researcher & Statistical Consultant · Industrial Mathematics Unit, University of Limerick · 2017–2018\n\nBuilding industry collaborations and continuing network science research (Supervisor: Dr. Kevin Burke).\n\n\n\n\n–&gt;"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome to the blog\n\n\n\nnews\n\nnetworks\n\n\n\nA short note on what I plan to write about here.\n\n\n\n\n\nJul 4, 2026\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome to the blog",
-    "section": "",
-    "text": "Welcome, and thanks for stopping by. I’ve set up this space to write occasionally about the things I spend my research time on: the science of social networks, how information and behaviour spread through them, and the statistical and computational tools that help us make sense of large social systems."
-  },
-  {
-    "objectID": "posts/welcome/index.html#what-to-expect",
-    "href": "posts/welcome/index.html#what-to-expect",
-    "title": "Welcome to the blog",
-    "section": "What to expect",
-    "text": "What to expect\nI expect posts here to fall into a few loose categories:\n\nResearch notes — plain-language walkthroughs of recent papers from my group, and the questions that motivated them. If you’ve ever wondered whether fake news really spreads differently than a virus, or how we go about finding polarised opinion groups in a referendum debate, this is where I’ll try to explain it without the equations.\nMethods and tools — short pieces on techniques I find useful, from branching-process models to network community detection, and the practical side of applying statistics to real industry problems through MACSI.\nAcademic life — reflections on supervision, collaboration, and the day-to-day of research."
-  },
-  {
-    "objectID": "posts/welcome/index.html#a-first-example",
-    "href": "posts/welcome/index.html#a-first-example",
-    "title": "Welcome to the blog",
-    "section": "A first example",
-    "text": "A first example\nMuch of my work uses branching processes to describe how a piece of information — a retweet, a rumour, a behaviour — cascades through a network. The appeal is that a surprisingly simple model can reproduce important statistical features of real cascades, like how “viral” they become. In future posts I’ll unpack how that works and why it matters for understanding online debate.\nIf any of this sounds interesting and you’re thinking about a PhD, get in touch — I’m currently accepting students.\nThis is a starter post you can edit or delete. To add a new post, create a folder under posts/ with its own index.qmd and a date: in the front matter."
   },
   {
     "objectID": "research.html",

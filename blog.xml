@@ -10,40 +10,6 @@
 <atom:link href="https://DavidJPOS.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Associate Professor in Statistics and Data Analytics, University of Limerick</description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Fri, 03 Jul 2026 23:00:00 GMT</lastBuildDate>
-<item>
-  <title>Welcome to the blog</title>
-  <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
-  <link>https://DavidJPOS.github.io/posts/welcome/</link>
-  <description><![CDATA[ 
-
-
-
-
-<p>Welcome, and thanks for stopping by. I’ve set up this space to write occasionally about the things I spend my research time on: the science of social networks, how information and behaviour spread through them, and the statistical and computational tools that help us make sense of large social systems.</p>
-<section id="what-to-expect" class="level2">
-<h2 class="anchored" data-anchor-id="what-to-expect">What to expect</h2>
-<p>I expect posts here to fall into a few loose categories:</p>
-<ul>
-<li><strong>Research notes</strong> — plain-language walkthroughs of recent papers from my group, and the questions that motivated them. If you’ve ever wondered whether fake news really spreads differently than a virus, or how we go about finding polarised opinion groups in a referendum debate, this is where I’ll try to explain it without the equations.</li>
-<li><strong>Methods and tools</strong> — short pieces on techniques I find useful, from branching-process models to network community detection, and the practical side of applying statistics to real industry problems through <a href="https://ulsites.ul.ie/macsi/">MACSI</a>.</li>
-<li><strong>Academic life</strong> — reflections on supervision, collaboration, and the day-to-day of research.</li>
-</ul>
-</section>
-<section id="a-first-example" class="level2">
-<h2 class="anchored" data-anchor-id="a-first-example">A first example</h2>
-<p>Much of my work uses <em>branching processes</em> to describe how a piece of information — a retweet, a rumour, a behaviour — cascades through a network. The appeal is that a surprisingly simple model can reproduce important statistical features of real cascades, like how “viral” they become. In future posts I’ll unpack how that works and why it matters for understanding online debate.</p>
-<p>If any of this sounds interesting and you’re thinking about a PhD, <a href="mailto:David.OSullivan@ul.ie">get in touch</a> — I’m currently accepting students.</p>
-<p><em>This is a starter post you can edit or delete. To add a new post, create a folder under <code>posts/</code> with its own <code>index.qmd</code> and a <code>date:</code> in the front matter.</em></p>
-
-
-</section>
-
- ]]></description>
-  <category>news</category>
-  <category>networks</category>
-  <guid>https://DavidJPOS.github.io/posts/welcome/</guid>
-  <pubDate>Fri, 03 Jul 2026 23:00:00 GMT</pubDate>
-</item>
+<lastBuildDate>Wed, 29 Jul 2026 15:45:19 GMT</lastBuildDate>
 </channel>
 </rss>
