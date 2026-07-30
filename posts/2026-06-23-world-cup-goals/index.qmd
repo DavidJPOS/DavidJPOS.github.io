@@ -1,0 +1,10 @@
+---
+title: "Gooooooal! How many goals will be scored at World Cup 2026?"
+description: "My PhD students wrote a thing: How many goals will be scored at World Cup 2026?"
+author: "David J.P. O'Sullivan"
+date: "2026-06-23"
+categories: [World Cup 2026, Brainstorm article, PhD Students]
+---
+
+Dear reader, two of my PhD students, Ronan Lynch and Noel O'Gorman, wrote a very nice article for Brainstorm about the probable number of goals that will be scored over the soccer World Cup 2026. You can find it [here](https://www.rte.ie/brainstorm/2026/0623/1579640-world-cup-2026-goals-scored-games-data-statistics/).
+

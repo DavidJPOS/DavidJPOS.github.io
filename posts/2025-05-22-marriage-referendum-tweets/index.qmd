@@ -1,0 +1,10 @@
+---
+title: "What 499,642 tweets tell us about the 2015 marriage equality referendum"
+description: "My PhD students wrote a thing on our work on hte Irish Marrage referendum"
+author: "David J.P. O'Sullivan"
+date: "2025-05-22"
+categories: [Brainstorm article, PhD Student, Irish Marraige referndum, networks]
+---
+
+Dear reader, one of my PhD students, Caroline, wrote a very nice article about some of our work on how information spread around the Irish Marriage referendum, find it [here](https://www.rte.ie/brainstorm/2025/0521/1514094-marriage-equality-referendum-twitter-social-media-research-polarisation/).
+

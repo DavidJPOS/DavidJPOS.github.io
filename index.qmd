@@ -12,7 +12,7 @@ about:
     - text: "{{< ai pure >}} UL Pure Profile"
       href: https://pure.ul.ie/en/persons/david-osullivan/
     - icon: linkedin
-      href: https://www.linkedin.com/in/david-o-sullivan-8980a59b/
+      href: https://www.linkedin.com/in/david-o-sullivan-8980a5y9b/
       text: LinkedIn
 ---
 

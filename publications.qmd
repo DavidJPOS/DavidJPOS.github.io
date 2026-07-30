@@ -6,7 +6,7 @@ title: "Publications"
 PEER-REVIEWED WORK
 :::
 
-A full, always-current list is on my [Google Scholar](https://scholar.google.com/citations?user=6_MaPZ8AAAAJ) and [UL Pure](https://pure.ul.ie/en/persons/david-osullivan/publications/) profiles. Open-access articles are marked [Open Access]{.badge}; links to media coverage, data, and outreach appear beneath each entry.
+A current list is on my [Google Scholar](https://scholar.google.com/citations?user=6_MaPZ8AAAAJ) and [UL Pure](https://pure.ul.ie/en/persons/david-osullivan/publications/) profiles. Open-access articles are marked [Open Access]{.badge}; links to media coverage, data, and outreach appear beneath each entry.
 
 :::: {.featured-pub}
 ::: {.featured-label}
@@ -43,7 +43,9 @@ C.B. Pena, P. MacCarron & **D.J.P. O'Sullivan** (2025).
 [Finding polarized communities and tracking information diffusion on Twitter: A network approach on the Irish Abortion Referendum](https://doi.org/10.1098/rsos.240454).
 *Royal Society Open Science*, 12(1), 240454. [Open Access]{.badge}
 
-[[RTÉ Brainstorm](https://www.rte.ie/brainstorm/2025/0521/1514094-marriage-equality-referendum-twitter-social-media-research-polarisation/){.tag} [ECMI blog](https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/){.tag}]{.pub-tags}
+[[{{< ai arxiv >}} arXiv](https://arxiv.org/abs/2311.09196){.tag .tag-icon} 
+[RTÉ Brainstorm](https://www.rte.ie/brainstorm/2025/0521/1514094-marriage-equality-referendum-twitter-social-media-research-polarisation/){.tag} 
+[ECMI blog](https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/){.tag}]{.pub-tags}
 :::
 
 ::: {.pub}

@@ -1,0 +1,11 @@
+---
+title: "ECMI blog on our work"
+description: "My PhD student, Caroline Pena, work a thing."
+author: "David J.P. O'Sullivan"
+date: "2025-02-25"
+categories: [news, networks, ECMI blog]
+---
+
+Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post [here](https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/).
+
+The paper in question can be found [here](https://royalsocietypublishing.org/rsos/article/12/1/240454/92765/Finding-polarized-communities-and-tracking).
