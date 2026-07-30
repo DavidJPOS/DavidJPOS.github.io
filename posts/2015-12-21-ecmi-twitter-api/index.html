@@ -8,9 +8,9 @@
 
 <meta name="author" content="David J.P. O’Sullivan">
 <meta name="dcterms.date" content="2015-12-21">
-<meta name="description" content="Using the Twitter API to collect data.">
+<meta name="description" content="ECMI blog on how to collect data from Twitter, using the Twitter API to collect data.">
 
-<title>ECMI blog on how to collect data from Twitter – David J.P. O’Sullivan</title>
+<title>Hunting for Ground Truths – David J.P. O’Sullivan</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -140,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ECMI blog on how to collect data from Twitter</h1>
+<h1 class="title">Hunting for Ground Truths</h1>
   <div class="quarto-categories">
     <div class="quarto-category">networks</div>
     <div class="quarto-category">ECMI blog</div>
@@ -150,7 +185,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    Using the Twitter API to collect data.
+    ECMI blog on how to collect data from Twitter, using the Twitter API to collect data.
   </div>
 </div>
 
@@ -179,9 +214,96 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post <a href="https://ecmiindmath.org/2015/12/21/hunting-for-ground-truths/">here</a>.</p>
+<hr>
+<p><em>Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post <a href="https://ecmiindmath.org/2015/12/21/hunting-for-ground-truths/">here</a>.</em></p>
+<hr>
+<p>My name is David O’Sullivan and I am currently pursuing a PhD in complex contagion on clustered networks. Many systems find a natural interpretation as a complex network where nodes identify the objects of the system and the links between nodes represent the presence of a relationship or interaction between those objects. Such network characterizations range from friendships on Facebook, connections between web-pages by hyper-links, to protein interaction networks in biological systems.</p>
+<blockquote class="blockquote">
+<p>A growing area of interest is the modelling of how behaviours diffuse across social networks, such as the adoption of innovations or the spreading of information.</p>
+</blockquote>
+<p>Such research areas fall under the broad umbrella term of computational social science, which includes complex networks at its core. Throughout my PhD I have enjoyed many opportunities to work on a wide variety of industry problems. Each of these problems have had a useful common trait; the objective has been clearly defined in terms of a ground truth, whether it involves identifying bottle necks in a repair process, estimating energy consumption on an electricity grid, or correctly predicting customers who are likely to leave a service. In all these cases the final model has benefited greatly from having data available to validate and refine the model on.</p>
+<blockquote class="blockquote">
+<p>Throughout my PhD I have enjoyed many opportunities to work on a wide variety of industry problems. Each of these problems have had a useful common trait; the objective has been clearly defined in terms of a ground truth, whether it involves identifying bottle necks in a repair process, estimating energy consumption on an electricity grid, or correctly predicting customers who are likely to leave a service. In all these cases the final model has benefited greatly from having data available to validate and refine the model on.</p>
+</blockquote>
+<p>Similarly in an academic setting once a model has been formulated, the value of the model is derived from its ability to predict the behaviour of the system. Necessitating the presence of observational or experimental results for comparisons. However, in computational social science this can prove to be problematic.</p>
+<blockquote class="blockquote">
+<p>Once a model has been formulated, say of how information spreads through a network, how can this model be validated beyond numerically simulating the system? Where can we get the ground truths for validation?</p>
+</blockquote>
+<p>ne option would be to set up a specialised randomized control trial, a la <a href="https://www.science.org/doi/10.1126/science.1185231">Damon Centola</a>, to get some experimental data, however this requires significant expense and expertise to set up. Another possible option would be to do a population level analysis similar to work by <a href="https://www.pnas.org/doi/abs/10.1073/pnas.0908800106">Sinan Aral</a>, again however, this requires not only significant expertise to set up but also the access to population level data and infrastructure to handle such a large analysis. If our model is predicting specific features of a network, that might not be commonly reported in statistics papers then the solution is to collect specialised datasets. Thus, allowing the collection of the observations we need to validate our models and refine our theories. The widespread use of social media platforms such as Facebook, Reddit and Twitter to name of few provides a useful arena to observe social behaviours.</p>
+<blockquote class="blockquote">
+<p>Many of these social media platforms allow for easy access to at least part of the their data using their application program interfaces (API’s).</p>
+</blockquote>
+<p>Suppose, for arguments sake, we have a model that predicts the <a href="https://en.wikipedia.org/wiki/Degree_distribution">in and out degree distribution</a> of a social network and we want some empirical data to test the predictions against. The next section illustrates how to find such data with a minimal working example of data collection, cleaning and analysis from Twitter.</p>
+<section id="data-collection" class="level2">
+<h2 class="anchored" data-anchor-id="data-collection">Data collection</h2>
+<p>To access the twitter API you will need a valid Twitter account and then you will need to create a twitter app <a href="https://developer.twitter.com/">here</a>. Enter your apps name, a brief description, and a web address (you can use the URL for your twitter account or any valid webpage). Once you have created the app you will get a unique consumer key, consumer secret, access token and access secret. These act like your personal password to the app (save these somewhere safe for later). If you want a more detailed walk trough of this process please follow <a href="http://iag.me/socialmedia/how-to-create-a-twitter-app-in-8-easy-steps/">this link</a>.</p>
+<p>R will be used for the analysis which can be downloaded <a href="https://www.r-project.org/">here</a>. I would also recommend downloading <a href="https://docs.posit.co/ide/user/#rstudio-ide-oss-downloads">RStudio</a> which provides a powerful IDE for R. Now that we have the required key, secrets and token to the API and a valid installation of R we can now being to collect some tweets. The following code for R downloads some packages that we require from <a href="https://cran.r-project.org/">CRAN</a> to process to process the collected tweets.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"streamR"</span>,<span class="st">"ROAuth"</span>,<span class="st">"stringr"</span>,<span class="st">"igraph"</span>)) </span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"streamR"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(<span class="st">"ROAuth"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>StreamR provides a series of simple functions to query the Twitter Stream API. The ROAuth takes all of the pain out of connecting to the API using our keys. Basically, OAuth is an authentication protocol that allows you to access the API without giving away your password. Its all a bit tecky and can be ignored. From our apps account we should have noted the various keys that we need to access the API. Running the following code with you unique keys creates a connection to the Twitter API. Following the on screen instructions and a successful connection should be established.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># save credentials</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>requestURL <span class="ot">=</span> <span class="st">"https://api.twitter.com/oauth/request_token"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>accessURL <span class="ot">=</span> <span class="st">"https://api.twitter.com/oauth/access_token"</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>authURL <span class="ot">=</span> <span class="st">"https://api.twitter.com/oauth/authorize"</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>consumerKey <span class="ot">=</span> <span class="st">"PASTE_YOUR_CONSUMER_KEY_HERE"</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>consumerSecret <span class="ot">=</span> <span class="st">"PASTE_YOUR_CONSUMER_SECRET_HERE"</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>accessToken <span class="ot">=</span> <span class="st">"PASTE_YOUR_ACCESS_TOKEN_HERE"</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>accessSecret <span class="ot">=</span> <span class="st">"PASTE_YOUR_SECRET_HERE"</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co"># set up handshake </span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>my_oauth <span class="ot">=</span> OAuthFactory<span class="sc">$</span><span class="fu">new</span>(<span class="at">consumerKey =</span> consumerKey, <span class="at">consumerSecret =</span> consumerSecret, <span class="at">requestURL =</span> requestURL, <span class="at">accessURL =</span> accessURL, <span class="at">authURL =</span> authURL)</span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>my_oauth<span class="sc">$</span><span class="fu">handshake</span>(<span class="at">cainfo =</span> <span class="fu">system.file</span>(<span class="st">"CurlSSL"</span>, <span class="st">"cacert.pem"</span>, <span class="at">package =</span> <span class="st">"RCurl"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>You will be prompted to copy a web address into your browser, do so and on the webpage click “Authenticate”. Enter the retrieved code into your R console to validate the connection. We now have a valid connection that we can use to acquire data. Using this API access the data collection process begins using <code>filterStream</code>. This opens a connection to Twitter’s streaming API that will return a random sample of public statuses, around 1% at any given time. The data is saved in <a href="https://en.wikipedia.org/wiki/JSON">JSON format</a> to the working directory specified in R. The following code collects tweets from the island of Ireland over the next hour (use <code>?filterstream</code> for details on function arguments). Once the code is set running its time for coffee/tea while the data is being collected.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">filterStream</span>(<span class="st">"sampled_data.json"</span>,<span class="at">locations =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="fl">10.77</span>,<span class="fl">51.36</span>,<span class="sc">-</span><span class="fl">5.22</span>,<span class="fl">55.52</span>), <span class="at">timeout =</span> <span class="dv">3600</span>,<span class="at">oauth =</span> my_oauth)</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>tweets_df <span class="ot">=</span> <span class="fu">parseTweets</span>(<span class="st">"sampled_data.json"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>The function <code>parseTweets</code> converts the JSON file into the <code>tweets_df</code> data frame that contains all the available information about the collected tweets. Using <code>names(twitter_df)</code> yields the variable names that are contained in the dataset. Now that we have gathered the data, the next section just gives a very brief example on cleaning.</p>
+</section>
+<section id="building-the-network" class="level2">
+<h2 class="anchored" data-anchor-id="building-the-network">Building the network</h2>
+<p>We wish to extract how people are connected on twitter. A users tweets will often contain “<span class="citation" data-cites="screen_name">@screen_name</span>” in order to tag another user in a tweet. This is usually done as part of a conversation or to bring a users attention to a piece of information. To extract these values first we will standardise the text by transforming it all to lower-case and removing all non alpha numeric characters (while still keeping @). Then we will extract all words prefixed by @ and finally transform this into a matrix of who has tweeted at who. The following code parses the tweets, using the previously installed package <code>stringr</code>.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>( stringr )</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>cleaned_text <span class="ot">=</span> <span class="fu">tolower</span>( <span class="fu">gsub</span>(<span class="st">"[^[:alnum:]@]"</span>, <span class="st">" "</span>, tweets_df<span class="sc">$</span>text)) <span class="co"># keep only alpha numeric and @ symbols</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>atsymbol.regex <span class="ot">=</span> <span class="fu">regex</span>(<span class="st">"(?&lt;=^|</span><span class="sc">\\</span><span class="st">s)@</span><span class="sc">\\</span><span class="st">S+"</span>) <span class="co">#  create a regular expression search for </span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>atsymbol.list <span class="ot">=</span> <span class="fu">str_extract_all</span>( cleaned_text, atsymbol.regex )<span class="co"># extract all words with @ symbol</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>mentions <span class="ot">=</span> <span class="fu">lapply</span>(<span class="at">X =</span> atsymbol.list, <span class="at">FUN =</span> <span class="cf">function</span>(X){<span class="fu">gsub</span>(<span class="at">pattern =</span> <span class="st">"@"</span>,<span class="at">replacement =</span> <span class="st">""</span>,<span class="at">x =</span> X)}) <span class="co"># generate a list containing all @usernames for each tweet</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">names</span>(mentions) <span class="ot">=</span> <span class="fu">tolower</span>(tweets_df<span class="sc">$</span>screen_name) </span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>graph_df <span class="ot">=</span> <span class="fu">data.frame</span>( <span class="at">from =</span> <span class="fu">names</span>(<span class="fu">unlist</span>( mentions )), <span class="at">to =</span> <span class="fu">unlist</span>( mentions )) <span class="co"># map list to a matrix</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Using the igraph package which contains a whole suite of functions for network analysis, we can build the network. Once the network has been constructed it is possible to quickly calculate the in and out degree distribution of the network using some inbuilt functions.</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>( igraph )</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>mentions_graph <span class="ot">=</span> <span class="fu">graph.data.frame</span>( graph_df, <span class="at">directed =</span> <span class="cn">TRUE</span> )</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>( <span class="fu">degree.distribution</span>(<span class="at">graph =</span> mentions_graph, <span class="at">mode =</span> <span class="st">"out"</span>), <span class="at">col =</span> <span class="st">"red"</span>, <span class="at">pch =</span> <span class="dv">20</span>, <span class="at">cex =</span> <span class="fl">1.5</span>,</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>      <span class="at">log =</span> <span class="st">"xy"</span>, <span class="at">xlab =</span> <span class="st">"degree"</span>, <span class="at">ylab =</span> <span class="st">"probability"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="fu">points</span>( <span class="fu">degree.distribution</span>(<span class="at">graph =</span> mentions_graph, <span class="at">mode =</span> <span class="st">"in"</span>), <span class="at">col =</span> <span class="st">"blue"</span>, <span class="at">pch =</span> <span class="dv">20</span>, <span class="at">cex =</span> <span class="fl">1.5</span> )</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="fu">legend</span>( <span class="st">"topright"</span>, <span class="at">col =</span> <span class="fu">c</span>(<span class="st">"red"</span>,<span class="st">"blue"</span>), <span class="at">pch =</span> <span class="dv">20</span>, <span class="fu">c</span>(<span class="st">"In degree"</span>,<span class="st">"Out degree"</span>) )</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/clipboard-3712719077.png" class="img-fluid figure-img"></p>
+<figcaption>Degree distribution for the network.</figcaption>
+</figure>
+</div>
+</section>
+<section id="closing-comments" class="level2">
+<h2 class="anchored" data-anchor-id="closing-comments">Closing comments</h2>
+<p>Then, if we have a model, we just compare the results and see how our predictions hold up.</p>
+<blockquote class="blockquote">
+<p>The general point of all this is that the ability to gather your own data allows you the freedom and flexibility to create a convenient dataset for evaluation.</p>
+</blockquote>
+<p>Even though this example is rather simplistic, it does highlight the ease at which data can be obtained. Removing the reliance on existing datasets and allowing for tailored dataset to be created. It also removes the cost associated with some expensive methods that were mentioned earlier in the blog.</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -256,7 +378,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/DavidJPOS\.github\.io\/");
+        var filterRegex = new RegExp("https:\/\/davidjpos\.github\.io\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

@@ -1,1 +1,1 @@
-Sitemap: https://DavidJPOS.github.io/sitemap.xml
+Sitemap: https://davidjpos.github.io/sitemap.xml
