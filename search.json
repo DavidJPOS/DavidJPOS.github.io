@@ -98,6 +98,90 @@
     "text": "2015\n\nD.J.P. O’Sullivan, G.J. O’Keeffe, P.G. Fennell & J.P. Gleeson (2015). Mathematical modelling of complex contagion on clustered networks. Frontiers in Physics, 3, 71. Featured on journal homepage Open Access"
   },
   {
+    "objectID": "posts/2026-06-23-world-cup-goals/index.html",
+    "href": "posts/2026-06-23-world-cup-goals/index.html",
+    "title": "Gooooooal! How many goals will be scored at World Cup 2026?",
+    "section": "",
+    "text": "Dear reader, two of my PhD students, Ronan Lynch and Noel O’Gorman, wrote a very nice article for Brainstorm about the probable number of goals that will be scored over the soccer World Cup 2026. You can find it here."
+  },
+  {
+    "objectID": "posts/2025-05-22-marriage-referendum-tweets/index.html",
+    "href": "posts/2025-05-22-marriage-referendum-tweets/index.html",
+    "title": "What 499,642 tweets tell us about the 2015 marriage equality referendum",
+    "section": "",
+    "text": "Dear reader, one of my PhD students, Caroline, wrote a very nice article about some of our work on how information spread around the Irish Marriage referendum, find it here."
+  },
+  {
+    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html",
+    "href": "posts/2015-12-21-ecmi-twitter-api/index.html",
+    "title": "Hunting for Ground Truths",
+    "section": "",
+    "text": "Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post here.\nMy name is David O’Sullivan and I am currently pursuing a PhD in complex contagion on clustered networks. Many systems find a natural interpretation as a complex network where nodes identify the objects of the system and the links between nodes represent the presence of a relationship or interaction between those objects. Such network characterizations range from friendships on Facebook, connections between web-pages by hyper-links, to protein interaction networks in biological systems.\nSuch research areas fall under the broad umbrella term of computational social science, which includes complex networks at its core. Throughout my PhD I have enjoyed many opportunities to work on a wide variety of industry problems. Each of these problems have had a useful common trait; the objective has been clearly defined in terms of a ground truth, whether it involves identifying bottle necks in a repair process, estimating energy consumption on an electricity grid, or correctly predicting customers who are likely to leave a service. In all these cases the final model has benefited greatly from having data available to validate and refine the model on.\nSimilarly in an academic setting once a model has been formulated, the value of the model is derived from its ability to predict the behaviour of the system. Necessitating the presence of observational or experimental results for comparisons. However, in computational social science this can prove to be problematic.\nne option would be to set up a specialised randomized control trial, a la Damon Centola, to get some experimental data, however this requires significant expense and expertise to set up. Another possible option would be to do a population level analysis similar to work by Sinan Aral, again however, this requires not only significant expertise to set up but also the access to population level data and infrastructure to handle such a large analysis. If our model is predicting specific features of a network, that might not be commonly reported in statistics papers then the solution is to collect specialised datasets. Thus, allowing the collection of the observations we need to validate our models and refine our theories. The widespread use of social media platforms such as Facebook, Reddit and Twitter to name of few provides a useful arena to observe social behaviours.\nSuppose, for arguments sake, we have a model that predicts the in and out degree distribution of a social network and we want some empirical data to test the predictions against. The next section illustrates how to find such data with a minimal working example of data collection, cleaning and analysis from Twitter."
+  },
+  {
+    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html#data-collection",
+    "href": "posts/2015-12-21-ecmi-twitter-api/index.html#data-collection",
+    "title": "Hunting for Ground Truths",
+    "section": "Data collection",
+    "text": "Data collection\nTo access the twitter API you will need a valid Twitter account and then you will need to create a twitter app here. Enter your apps name, a brief description, and a web address (you can use the URL for your twitter account or any valid webpage). Once you have created the app you will get a unique consumer key, consumer secret, access token and access secret. These act like your personal password to the app (save these somewhere safe for later). If you want a more detailed walk trough of this process please follow this link.\nR will be used for the analysis which can be downloaded here. I would also recommend downloading RStudio which provides a powerful IDE for R. Now that we have the required key, secrets and token to the API and a valid installation of R we can now being to collect some tweets. The following code for R downloads some packages that we require from CRAN to process to process the collected tweets.\n\ninstall.packages(c(\"streamR\",\"ROAuth\",\"stringr\",\"igraph\")) \nlibrary(\"streamR\")\nlibrary(\"ROAuth\")\n\nStreamR provides a series of simple functions to query the Twitter Stream API. The ROAuth takes all of the pain out of connecting to the API using our keys. Basically, OAuth is an authentication protocol that allows you to access the API without giving away your password. Its all a bit tecky and can be ignored. From our apps account we should have noted the various keys that we need to access the API. Running the following code with you unique keys creates a connection to the Twitter API. Following the on screen instructions and a successful connection should be established.\n\n# save credentials\nrequestURL = \"https://api.twitter.com/oauth/request_token\"\naccessURL = \"https://api.twitter.com/oauth/access_token\"\nauthURL = \"https://api.twitter.com/oauth/authorize\"\nconsumerKey = \"PASTE_YOUR_CONSUMER_KEY_HERE\"\nconsumerSecret = \"PASTE_YOUR_CONSUMER_SECRET_HERE\"\n\naccessToken = \"PASTE_YOUR_ACCESS_TOKEN_HERE\"\naccessSecret = \"PASTE_YOUR_SECRET_HERE\"\n\n# set up handshake \nmy_oauth = OAuthFactory$new(consumerKey = consumerKey, consumerSecret = consumerSecret, requestURL = requestURL, accessURL = accessURL, authURL = authURL)\nmy_oauth$handshake(cainfo = system.file(\"CurlSSL\", \"cacert.pem\", package = \"RCurl\"))\n\nYou will be prompted to copy a web address into your browser, do so and on the webpage click “Authenticate”. Enter the retrieved code into your R console to validate the connection. We now have a valid connection that we can use to acquire data. Using this API access the data collection process begins using filterStream. This opens a connection to Twitter’s streaming API that will return a random sample of public statuses, around 1% at any given time. The data is saved in JSON format to the working directory specified in R. The following code collects tweets from the island of Ireland over the next hour (use ?filterstream for details on function arguments). Once the code is set running its time for coffee/tea while the data is being collected.\n\nfilterStream(\"sampled_data.json\",locations = c(-10.77,51.36,-5.22,55.52), timeout = 3600,oauth = my_oauth)\ntweets_df = parseTweets(\"sampled_data.json\")\n\nThe function parseTweets converts the JSON file into the tweets_df data frame that contains all the available information about the collected tweets. Using names(twitter_df) yields the variable names that are contained in the dataset. Now that we have gathered the data, the next section just gives a very brief example on cleaning."
+  },
+  {
+    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html#building-the-network",
+    "href": "posts/2015-12-21-ecmi-twitter-api/index.html#building-the-network",
+    "title": "Hunting for Ground Truths",
+    "section": "Building the network",
+    "text": "Building the network\nWe wish to extract how people are connected on twitter. A users tweets will often contain “@screen_name” in order to tag another user in a tweet. This is usually done as part of a conversation or to bring a users attention to a piece of information. To extract these values first we will standardise the text by transforming it all to lower-case and removing all non alpha numeric characters (while still keeping @). Then we will extract all words prefixed by @ and finally transform this into a matrix of who has tweeted at who. The following code parses the tweets, using the previously installed package stringr.\n\nlibrary( stringr )\ncleaned_text = tolower( gsub(\"[^[:alnum:]@]\", \" \", tweets_df$text)) # keep only alpha numeric and @ symbols\natsymbol.regex = regex(\"(?&lt;=^|\\\\s)@\\\\S+\") #  create a regular expression search for \natsymbol.list = str_extract_all( cleaned_text, atsymbol.regex )# extract all words with @ symbol\nmentions = lapply(X = atsymbol.list, FUN = function(X){gsub(pattern = \"@\",replacement = \"\",x = X)}) # generate a list containing all @usernames for each tweet\nnames(mentions) = tolower(tweets_df$screen_name) \ngraph_df = data.frame( from = names(unlist( mentions )), to = unlist( mentions )) # map list to a matrix\n\nUsing the igraph package which contains a whole suite of functions for network analysis, we can build the network. Once the network has been constructed it is possible to quickly calculate the in and out degree distribution of the network using some inbuilt functions.\n\nlibrary( igraph )\nmentions_graph = graph.data.frame( graph_df, directed = TRUE )\nplot( degree.distribution(graph = mentions_graph, mode = \"out\"), col = \"red\", pch = 20, cex = 1.5,\n      log = \"xy\", xlab = \"degree\", ylab = \"probability\")\npoints( degree.distribution(graph = mentions_graph, mode = \"in\"), col = \"blue\", pch = 20, cex = 1.5 )\nlegend( \"topright\", col = c(\"red\",\"blue\"), pch = 20, c(\"In degree\",\"Out degree\") )\n\n\n\n\nDegree distribution for the network."
+  },
+  {
+    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html#closing-comments",
+    "href": "posts/2015-12-21-ecmi-twitter-api/index.html#closing-comments",
+    "title": "Hunting for Ground Truths",
+    "section": "Closing comments",
+    "text": "Closing comments\nThen, if we have a model, we just compare the results and see how our predictions hold up.\n\nThe general point of all this is that the ability to gather your own data allows you the freedom and flexibility to create a convenient dataset for evaluation.\n\nEven though this example is rather simplistic, it does highlight the ease at which data can be obtained. Removing the reliance on existing datasets and allowing for tailored dataset to be created. It also removes the cost associated with some expensive methods that were mentioned earlier in the blog."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
+    "section": "",
+    "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGooooooal! How many goals will be scored at World Cup 2026?\n\n\n\nWorld Cup 2026\n\nBrainstorm article\n\nPhD Students\n\n\n\nMy PhD students wrote a thing: How many goals will be scored at World Cup 2026?\n\n\n\n\n\nJun 23, 2026\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the chance of a message in a bottle being found?\n\n\n\nThe Conversation\n\nProbability\n\nPublic Engagement\n\n\n\nCo-written with Kevin Burke: working out the odds that a message in a bottle is found, and found over 100 years later.\n\n\n\n\n\nApr 13, 2026\n\n\nDavid J.P. O’Sullivan & Kevin Burke\n\n\n\n\n\n\n\n\n\n\n\n\nWhat 499,642 tweets tell us about the 2015 marriage equality referendum\n\n\n\nBrainstorm article\n\nPhD Student\n\nIrish Marraige referndum\n\nnetworks\n\n\n\nMy PhD students wrote a thing on our work on hte Irish Marrage referendum\n\n\n\n\n\nMay 22, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on our work\n\n\n\nnews\n\nnetworks\n\nECMI blog\n\n\n\nMy PhD student, Caroline Pena, work a thing.\n\n\n\n\n\nFeb 25, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nHunting for Ground Truths\n\n\n\nnetworks\n\nECMI blog\n\nAPI\n\n\n\nECMI blog on how to collect data from Twitter, using the Twitter API to collect data.\n\n\n\n\n\nDec 21, 2015\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "David J.P. O’Sullivan",
+    "section": "",
+    "text": "ASSOCIATE PROFESSOR · STATISTICS & DATA ANALYTICS\nI am an Associate Professor in the Department of Mathematics and Statistics at the University of Limerick, and a member of the Mathematics Applications Consortium for Science and Industry (MACSI).\nMy research focuses on the science of social networks. I develop analytical tools to understand how network structure affects the spread of information and behaviour — for example, whether fake news spreads differently than a virus — the social mechanisms behind the emergence of behaviours on networks, and how online networks shape and reflect public deliberation, such as the polarised opinion groups that formed around Irish referendums on Twitter/X. I am also keenly interested in applying statistical methods to real-world industry problems."
+  },
+  {
+    "objectID": "index.html#interests",
+    "href": "index.html#interests",
+    "title": "David J.P. O’Sullivan",
+    "section": "Interests",
+    "text": "Interests\n\nSocial network analysis & community detection\nComplex contagion and information diffusion\nBranching process models on networks\nComputational social science\nApplied statistics for industry"
+  },
+  {
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "David J.P. O’Sullivan",
+    "section": "Education",
+    "text": "Education\n\nPhD in Applied Mathematics & Statistics · University of Limerick (2013–2017)\n\nDynamics of Behaviour & Information Diffusion on Complex Networks: Analytical and Empirical Perspectives. Supervisors: Prof. James Gleeson & Dr. Mariano Beguerisse-Díaz."
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "David J.P. O’Sullivan",
+    "section": "Experience",
+    "text": "Experience\n\n\nAssociate Professor of Statistics & Data Analytics · University of Limerick · 2020–present\n\nDeveloping mathematical and statistical tools for the analysis of large social systems.\n\nVisiting Researcher · BT Ireland Innovation Centre, University of Ulster · 2020–2024\n\nFlexible statistical methods to detect deterioration in model performance and automate retraining.\n\n\nPost-doctoral Researcher · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019.\n\nPost-doctoral Researcher & Statistical Consultant · Industrial Mathematics Unit, University of Limerick · 2017–2018\n\nBuilding industry collaborations and continuing network science research.\n\n\n\n\n–&gt;"
+  },
+  {
+    "objectID": "posts/2025-02-25-ecmi-abortion-referendum/index.html",
+    "href": "posts/2025-02-25-ecmi-abortion-referendum/index.html",
+    "title": "ECMI blog on our work",
+    "section": "",
+    "text": "Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post here.\nThe paper in question can be found here."
+  },
+  {
     "objectID": "posts/2026-04-13-message-in-a-bottle/index.html",
     "href": "posts/2026-04-13-message-in-a-bottle/index.html",
     "title": "What is the chance of a message in a bottle being found?",
@@ -138,90 +222,6 @@
     "title": "What is the chance of a message in a bottle being found?",
     "section": "Bringing it together",
     "text": "Bringing it together\nRecapping the above, we have that: (A) one in ten bottles with messages are found, of which (B) one in ten are over 100 years old. Bringing these results together using the multiplication rule, we estimate the chance of a message in a bottle being found and it being over 100 years old to be \\((1/10) \\times (1/10) = 1/100\\).\nSo, if there are 100,000 bottles with messages floating around the oceans waiting to be found, we’d expect 1,000 of these to be found and be 100 or more years old. Assuming anybody in the world is equally likely to find one of these, with 8 billion people currently, that’s about a one in 8 million chance of you finding one — pretty unlikely.\nHowever, some people are more persistent at message-in-a-bottle hunting than others. Following the paths of ocean currents (known as gyres) could provide clues on where to look. Specifically, peninsulas or islands intersecting with these gyres could be good spots. For this reason, it has been suggested the Caribbean islands are ideally placed for finding bottles as they lie on the path of the North Atlantic Gyre. Which seems like a great reason to travel to the Caribbean!\nBut let’s also spare a thought for the poor soul stranded on their desert island, who surely won’t appreciate the low odds of their SOS being found.\n\nDOI 10.64628/AB.c3gmg5xn6"
-  },
-  {
-    "objectID": "posts/2025-02-25-ecmi-abortion-referendum/index.html",
-    "href": "posts/2025-02-25-ecmi-abortion-referendum/index.html",
-    "title": "ECMI blog on our work",
-    "section": "",
-    "text": "Dear reader, my PhD student, Caroline Pena, wrote an ECMI blog about our work. It focused on our recent work that was published in RSOS. In the work we collected and analysed a large corpus of Twitter data that dealt with the Irish abortion referendum to understand how different groups communicated online and how information spread inside and between those groups. You can find the blog post here.\nThe paper in question can be found here."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "David J.P. O’Sullivan",
-    "section": "",
-    "text": "ASSOCIATE PROFESSOR · STATISTICS & DATA ANALYTICS\nI am an Associate Professor in the Department of Mathematics and Statistics at the University of Limerick, and a member of the Mathematics Applications Consortium for Science and Industry (MACSI).\nMy research focuses on the science of social networks. I develop analytical tools to understand how network structure affects the spread of information and behaviour — for example, whether fake news spreads differently than a virus — the social mechanisms behind the emergence of behaviours on networks, and how online networks shape and reflect public deliberation, such as the polarised opinion groups that formed around Irish referendums on Twitter/X. I am also keenly interested in applying statistical methods to real-world industry problems."
-  },
-  {
-    "objectID": "index.html#interests",
-    "href": "index.html#interests",
-    "title": "David J.P. O’Sullivan",
-    "section": "Interests",
-    "text": "Interests\n\nSocial network analysis & community detection\nComplex contagion and information diffusion\nBranching process models on networks\nComputational social science\nApplied statistics for industry"
-  },
-  {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "David J.P. O’Sullivan",
-    "section": "Education",
-    "text": "Education\n\nPhD in Applied Mathematics & Statistics · University of Limerick (2013–2017)\n\nDynamics of Behaviour & Information Diffusion on Complex Networks: Analytical and Empirical Perspectives. Supervisors: Prof. James Gleeson & Dr. Mariano Beguerisse-Díaz."
-  },
-  {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "David J.P. O’Sullivan",
-    "section": "Experience",
-    "text": "Experience\n\n\nAssociate Professor of Statistics & Data Analytics · University of Limerick · 2020–present\n\nDeveloping mathematical and statistical tools for the analysis of large social systems.\n\nVisiting Researcher · BT Ireland Innovation Centre, University of Ulster · 2020–2024\n\nFlexible statistical methods to detect deterioration in model performance and automate retraining.\n\n\nPost-doctoral Researcher · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019.\n\nPost-doctoral Researcher & Statistical Consultant · Industrial Mathematics Unit, University of Limerick · 2017–2018\n\nBuilding industry collaborations and continuing network science research.\n\n\n\n\n–&gt;"
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "Blog",
-    "section": "",
-    "text": "NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE\n\nOccasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I’ve make a mistake).\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGooooooal! How many goals will be scored at World Cup 2026?\n\n\n\nWorld Cup 2026\n\nBrainstorm article\n\nPhD Students\n\n\n\nMy PhD students wrote a thing: How many goals will be scored at World Cup 2026?\n\n\n\n\n\nJun 23, 2026\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nWhat is the chance of a message in a bottle being found?\n\n\n\nThe Conversation\n\nProbability\n\nPublic Engagement\n\n\n\nCo-written with Kevin Burke: working out the odds that a message in a bottle is found, and found over 100 years later.\n\n\n\n\n\nApr 13, 2026\n\n\nDavid J.P. O’Sullivan & Kevin Burke\n\n\n\n\n\n\n\n\n\n\n\n\nWhat 499,642 tweets tell us about the 2015 marriage equality referendum\n\n\n\nBrainstorm article\n\nPhD Student\n\nIrish Marraige referndum\n\nnetworks\n\n\n\nMy PhD students wrote a thing on our work on hte Irish Marrage referendum\n\n\n\n\n\nMay 22, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nECMI blog on our work\n\n\n\nnews\n\nnetworks\n\nECMI blog\n\n\n\nMy PhD student, Caroline Pena, work a thing.\n\n\n\n\n\nFeb 25, 2025\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\n\n\n\n\n\n\n\nHunting for Ground Truths\n\n\n\nnetworks\n\nECMI blog\n\nAPI\n\n\n\nECMI blog on how to collect data from Twitter, using the Twitter API to collect data.\n\n\n\n\n\nDec 21, 2015\n\n\nDavid J.P. O’Sullivan\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html",
-    "href": "posts/2015-12-21-ecmi-twitter-api/index.html",
-    "title": "Hunting for Ground Truths",
-    "section": "",
-    "text": "Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post here.\nMy name is David O’Sullivan and I am currently pursuing a PhD in complex contagion on clustered networks. Many systems find a natural interpretation as a complex network where nodes identify the objects of the system and the links between nodes represent the presence of a relationship or interaction between those objects. Such network characterizations range from friendships on Facebook, connections between web-pages by hyper-links, to protein interaction networks in biological systems.\nSuch research areas fall under the broad umbrella term of computational social science, which includes complex networks at its core. Throughout my PhD I have enjoyed many opportunities to work on a wide variety of industry problems. Each of these problems have had a useful common trait; the objective has been clearly defined in terms of a ground truth, whether it involves identifying bottle necks in a repair process, estimating energy consumption on an electricity grid, or correctly predicting customers who are likely to leave a service. In all these cases the final model has benefited greatly from having data available to validate and refine the model on.\nSimilarly in an academic setting once a model has been formulated, the value of the model is derived from its ability to predict the behaviour of the system. Necessitating the presence of observational or experimental results for comparisons. However, in computational social science this can prove to be problematic.\nne option would be to set up a specialised randomized control trial, a la Damon Centola, to get some experimental data, however this requires significant expense and expertise to set up. Another possible option would be to do a population level analysis similar to work by Sinan Aral, again however, this requires not only significant expertise to set up but also the access to population level data and infrastructure to handle such a large analysis. If our model is predicting specific features of a network, that might not be commonly reported in statistics papers then the solution is to collect specialised datasets. Thus, allowing the collection of the observations we need to validate our models and refine our theories. The widespread use of social media platforms such as Facebook, Reddit and Twitter to name of few provides a useful arena to observe social behaviours.\nSuppose, for arguments sake, we have a model that predicts the in and out degree distribution of a social network and we want some empirical data to test the predictions against. The next section illustrates how to find such data with a minimal working example of data collection, cleaning and analysis from Twitter."
-  },
-  {
-    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html#data-collection",
-    "href": "posts/2015-12-21-ecmi-twitter-api/index.html#data-collection",
-    "title": "Hunting for Ground Truths",
-    "section": "Data collection",
-    "text": "Data collection\nTo access the twitter API you will need a valid Twitter account and then you will need to create a twitter app here. Enter your apps name, a brief description, and a web address (you can use the URL for your twitter account or any valid webpage). Once you have created the app you will get a unique consumer key, consumer secret, access token and access secret. These act like your personal password to the app (save these somewhere safe for later). If you want a more detailed walk trough of this process please follow this link.\nR will be used for the analysis which can be downloaded here. I would also recommend downloading RStudio which provides a powerful IDE for R. Now that we have the required key, secrets and token to the API and a valid installation of R we can now being to collect some tweets. The following code for R downloads some packages that we require from CRAN to process to process the collected tweets.\n\ninstall.packages(c(\"streamR\",\"ROAuth\",\"stringr\",\"igraph\")) \nlibrary(\"streamR\")\nlibrary(\"ROAuth\")\n\nStreamR provides a series of simple functions to query the Twitter Stream API. The ROAuth takes all of the pain out of connecting to the API using our keys. Basically, OAuth is an authentication protocol that allows you to access the API without giving away your password. Its all a bit tecky and can be ignored. From our apps account we should have noted the various keys that we need to access the API. Running the following code with you unique keys creates a connection to the Twitter API. Following the on screen instructions and a successful connection should be established.\n\n# save credentials\nrequestURL = \"https://api.twitter.com/oauth/request_token\"\naccessURL = \"https://api.twitter.com/oauth/access_token\"\nauthURL = \"https://api.twitter.com/oauth/authorize\"\nconsumerKey = \"PASTE_YOUR_CONSUMER_KEY_HERE\"\nconsumerSecret = \"PASTE_YOUR_CONSUMER_SECRET_HERE\"\n\naccessToken = \"PASTE_YOUR_ACCESS_TOKEN_HERE\"\naccessSecret = \"PASTE_YOUR_SECRET_HERE\"\n\n# set up handshake \nmy_oauth = OAuthFactory$new(consumerKey = consumerKey, consumerSecret = consumerSecret, requestURL = requestURL, accessURL = accessURL, authURL = authURL)\nmy_oauth$handshake(cainfo = system.file(\"CurlSSL\", \"cacert.pem\", package = \"RCurl\"))\n\nYou will be prompted to copy a web address into your browser, do so and on the webpage click “Authenticate”. Enter the retrieved code into your R console to validate the connection. We now have a valid connection that we can use to acquire data. Using this API access the data collection process begins using filterStream. This opens a connection to Twitter’s streaming API that will return a random sample of public statuses, around 1% at any given time. The data is saved in JSON format to the working directory specified in R. The following code collects tweets from the island of Ireland over the next hour (use ?filterstream for details on function arguments). Once the code is set running its time for coffee/tea while the data is being collected.\n\nfilterStream(\"sampled_data.json\",locations = c(-10.77,51.36,-5.22,55.52), timeout = 3600,oauth = my_oauth)\ntweets_df = parseTweets(\"sampled_data.json\")\n\nThe function parseTweets converts the JSON file into the tweets_df data frame that contains all the available information about the collected tweets. Using names(twitter_df) yields the variable names that are contained in the dataset. Now that we have gathered the data, the next section just gives a very brief example on cleaning."
-  },
-  {
-    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html#building-the-network",
-    "href": "posts/2015-12-21-ecmi-twitter-api/index.html#building-the-network",
-    "title": "Hunting for Ground Truths",
-    "section": "Building the network",
-    "text": "Building the network\nWe wish to extract how people are connected on twitter. A users tweets will often contain “@screen_name” in order to tag another user in a tweet. This is usually done as part of a conversation or to bring a users attention to a piece of information. To extract these values first we will standardise the text by transforming it all to lower-case and removing all non alpha numeric characters (while still keeping @). Then we will extract all words prefixed by @ and finally transform this into a matrix of who has tweeted at who. The following code parses the tweets, using the previously installed package stringr.\n\nlibrary( stringr )\ncleaned_text = tolower( gsub(\"[^[:alnum:]@]\", \" \", tweets_df$text)) # keep only alpha numeric and @ symbols\natsymbol.regex = regex(\"(?&lt;=^|\\\\s)@\\\\S+\") #  create a regular expression search for \natsymbol.list = str_extract_all( cleaned_text, atsymbol.regex )# extract all words with @ symbol\nmentions = lapply(X = atsymbol.list, FUN = function(X){gsub(pattern = \"@\",replacement = \"\",x = X)}) # generate a list containing all @usernames for each tweet\nnames(mentions) = tolower(tweets_df$screen_name) \ngraph_df = data.frame( from = names(unlist( mentions )), to = unlist( mentions )) # map list to a matrix\n\nUsing the igraph package which contains a whole suite of functions for network analysis, we can build the network. Once the network has been constructed it is possible to quickly calculate the in and out degree distribution of the network using some inbuilt functions.\n\nlibrary( igraph )\nmentions_graph = graph.data.frame( graph_df, directed = TRUE )\nplot( degree.distribution(graph = mentions_graph, mode = \"out\"), col = \"red\", pch = 20, cex = 1.5,\n      log = \"xy\", xlab = \"degree\", ylab = \"probability\")\npoints( degree.distribution(graph = mentions_graph, mode = \"in\"), col = \"blue\", pch = 20, cex = 1.5 )\nlegend( \"topright\", col = c(\"red\",\"blue\"), pch = 20, c(\"In degree\",\"Out degree\") )\n\n\n\n\nDegree distribution for the network."
-  },
-  {
-    "objectID": "posts/2015-12-21-ecmi-twitter-api/index.html#closing-comments",
-    "href": "posts/2015-12-21-ecmi-twitter-api/index.html#closing-comments",
-    "title": "Hunting for Ground Truths",
-    "section": "Closing comments",
-    "text": "Closing comments\nThen, if we have a model, we just compare the results and see how our predictions hold up.\n\nThe general point of all this is that the ability to gather your own data allows you the freedom and flexibility to create a convenient dataset for evaluation.\n\nEven though this example is rather simplistic, it does highlight the ease at which data can be obtained. Removing the reliance on existing datasets and allowing for tailored dataset to be created. It also removes the cost associated with some expensive methods that were mentioned earlier in the blog."
-  },
-  {
-    "objectID": "posts/2025-05-22-marriage-referendum-tweets/index.html",
-    "href": "posts/2025-05-22-marriage-referendum-tweets/index.html",
-    "title": "What 499,642 tweets tell us about the 2015 marriage equality referendum",
-    "section": "",
-    "text": "Dear reader, one of my PhD students, Caroline, wrote a very nice article about some of our work on how information spread around the Irish Marriage referendum, find it here."
-  },
-  {
-    "objectID": "posts/2026-06-23-world-cup-goals/index.html",
-    "href": "posts/2026-06-23-world-cup-goals/index.html",
-    "title": "Gooooooal! How many goals will be scored at World Cup 2026?",
-    "section": "",
-    "text": "Dear reader, two of my PhD students, Ronan Lynch and Noel O’Gorman, wrote a very nice article for Brainstorm about the probable number of goals that will be scored over the soccer World Cup 2026. You can find it here."
   },
   {
     "objectID": "research.html",
