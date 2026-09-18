@@ -10,7 +10,47 @@
 <atom:link href="https://davidjpos.github.io/blog.xml" rel="self" type="application/rss+xml"/>
 <description>Associate Professor in Statistics and Data Analytics, University of Limerick</description>
 <generator>quarto-1.7.33</generator>
-<lastBuildDate>Sat, 08 Aug 2026 23:00:00 GMT</lastBuildDate>
+<lastBuildDate>Thu, 10 Sep 2026 23:00:00 GMT</lastBuildDate>
+<item>
+  <title>RugbyScope: an open database of rugby union careers</title>
+  <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
+  <link>https://davidjpos.github.io/posts/2026-09-11-rugbyscope/</link>
+  <description><![CDATA[ 
+
+
+
+
+<p>Dear reader,</p>
+<p><a href="https://univ-avignon.fr/en/research-teacher/vincent-labatut/">Vincent Labatut</a> (Laboratoire Informatique d’Avignon, Avignon University) and I have a data paper out in <em>Data in Brief</em> that was just published. It describes RugbyScope, an open database of men’s rugby union players, teams, player’s stints whose teams and other demographical information. Just a note: here a stint is one player at one team over a continuous run of seasons, so a career is a sequence of stints.</p>
+<p><img src="https://davidjpos.github.io/posts/2026-09-11-rugbyscope/images/clipboard-2277644633.png" class="img-fluid"></p>
+<p>Just to give you some information on what is in the dataset:</p>
+<ul>
+<li>24,364 players, 7,888 teams and 96,573 stints, from 1867 to 2026.</li>
+<li>Players from 114 nations and teams from 180.</li>
+<li>All professional clubs worldwide, and by our estimate about 92% of professional players active in 2021.</li>
+<li>For players: birth and death details, height, weight, positions, nations, and identifiers for other rugby databases.</li>
+<li>For teams: type, tier, competitions, venues and founding dates.</li>
+<li>For stints: start and end years, matches played and points scored.</li>
+</ul>
+<p>We’ve been working on this for the two years, roughy. It was built from seven open sources: Wikidata, DBpedia, and the English, French, Italian, Japanese and Spanish editions of Wikipedia. The five languages were chosen to cover the main rugby nations and every professional league. Association football has several open databases like this. Rugby union had none; the rugby databases that do exist are commercial and closed.</p>
+<p>There are limits to data collected from such places of course. It is men’s rugby only and excludes sevens, as the sources do not cover either consistently. It inherits the gaps of Wikipedia and Wikidata, so coverage is uneven across nations, periods and levels of competition.</p>
+<p>Vincent did a huge amount of the heavy lifting on this. As one example, he ended up learning the rugby positions in Japanese kanji to scrape the Japanese edition. Most of the work was scraping Wikipedia infoboxes, which are formatted differently in each language edition and often within the same one, then reconciling five editions that do not always agree on who played where, or when. Wikipedia also changed quickly enough that some early code was obsolete before it had worked through all the articles. Additionally, thanks the use of AI agents to collect Wikipedia data over the data collection window we ran into some issues with there API. But were done now and the both the data and paper are publish. Links are below so you can go have a play.</p>
+<ul>
+<li>Paper: <a href="https://doi.org/10.1016/j.dib.2026.113231">doi.org/10.1016/j.dib.2026.113231</a></li>
+<li>Data (CSV, SQL and SQLite): <a href="https://doi.org/10.5281/zenodo.21476474">doi.org/10.5281/zenodo.21476474</a></li>
+<li>Code: <a href="https://github.com/CompNet/RugbyScope">github.com/CompNet/RugbyScope</a></li>
+</ul>
+
+
+
+ ]]></description>
+  <category>rugby</category>
+  <category>open data</category>
+  <category>data paper</category>
+  <category>wikipedia</category>
+  <guid>https://davidjpos.github.io/posts/2026-09-11-rugbyscope/</guid>
+  <pubDate>Thu, 10 Sep 2026 23:00:00 GMT</pubDate>
+</item>
 <item>
   <title>Did going first cost Fozia?</title>
   <dc:creator>David J.P. O&#39;Sullivan</dc:creator>
