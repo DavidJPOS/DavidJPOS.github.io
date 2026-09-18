@@ -7,7 +7,7 @@ categories: [networks, ECMI blog, API]
 ---
 
 
----
+------------------------------------------------------------------------
 
 *Dear reader, way back in time I wrote a blog on how to use the Twitter API to collect data. It very out of data but here you go, the blog post [here](https://ecmiindmath.org/2015/12/21/hunting-for-ground-truths/).*
 

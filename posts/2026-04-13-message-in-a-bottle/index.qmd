@@ -6,10 +6,11 @@ date: "2026-04-13"
 categories: [The Conversation, Probability, Public Engagement]
 ---
 
---- 
+------------------------------------------------------------------------
+
 *This piece was co-written with Kevin Burke and originally published on [The Conversation](https://theconversation.com/what-is-the-chance-of-a-message-in-a-bottle-being-found-272122). You can read the original there.*
 
---- 
+------------------------------------------------------------------------
 
 Recently, a cheerful 100-year-old message in a bottle was [found](https://theconversation.com/what-is-the-chance-of-a-message-in-a-bottle-being-found-272122) on the south-west coast of Australia. In it, a world war one soldier proclaimed to be "as happy as Larry".
 

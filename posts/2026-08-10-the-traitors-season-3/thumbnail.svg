@@ -1,0 +1,43 @@
+<svg viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Eight card slots arranged in two rows, coloured by which player owns them. The first slot has been turned over and shows a death card.">
+
+<rect x="50" y="50" width="110" height="140" rx="8" fill="#F4F5F5" stroke="#B9C4C6" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="105" y="82" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#9AA6A9">Fozia</text>
+<text x="105" y="132" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="19" fill="#9AA6A9">death</text>
+<text x="105" y="215" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#9AA6A9">1</text>
+
+<rect x="180" y="50" width="110" height="140" rx="8" fill="#F9EDEE" stroke="#C1666B" stroke-width="2"/>
+<text x="235" y="82" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#8A4145">Leon</text>
+<text x="235" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#C1666B">?</text>
+<text x="235" y="215" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">2</text>
+
+<rect x="310" y="50" width="110" height="140" rx="8" fill="#E3EFEF" stroke="#135E63" stroke-width="2"/>
+<text x="365" y="82" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#0C4448">Fozia</text>
+<text x="365" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#135E63">?</text>
+<text x="365" y="215" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">3</text>
+
+<rect x="440" y="50" width="110" height="140" rx="8" fill="#F9EDEE" stroke="#C1666B" stroke-width="2"/>
+<text x="495" y="82" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#8A4145">Leon</text>
+<text x="495" y="136" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#C1666B">?</text>
+<text x="495" y="215" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">4</text>
+
+<rect x="50" y="210" width="110" height="140" rx="8" fill="#E3EFEF" stroke="#135E63" stroke-width="2"/>
+<text x="105" y="242" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#0C4448">Fozia</text>
+<text x="105" y="296" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#135E63">?</text>
+<text x="105" y="375" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">5</text>
+
+<rect x="180" y="210" width="110" height="140" rx="8" fill="#F9EDEE" stroke="#C1666B" stroke-width="2"/>
+<text x="235" y="242" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#8A4145">Leon</text>
+<text x="235" y="296" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#C1666B">?</text>
+<text x="235" y="375" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">6</text>
+
+<rect x="310" y="210" width="110" height="140" rx="8" fill="#E3EFEF" stroke="#135E63" stroke-width="2"/>
+<text x="365" y="242" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#0C4448">Fozia</text>
+<text x="365" y="296" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#135E63">?</text>
+<text x="365" y="375" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">7</text>
+
+<rect x="440" y="210" width="110" height="140" rx="8" fill="#F9EDEE" stroke="#C1666B" stroke-width="2"/>
+<text x="495" y="242" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="16" fill="#8A4145">Leon</text>
+<text x="495" y="296" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="30" fill="#C1666B">?</text>
+<text x="495" y="375" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="15" fill="#5C6B76">8</text>
+
+</svg>

@@ -13,7 +13,7 @@ title-block-banner: false
 ---
 
 ::: {.eyebrow}
-NOTES ON NETWORKS, STATISTICS & RESEARCH LIFE
+NOTES ON NETWORKS, STATISTICS & RESEARCH
 :::
 
 Occasional writing on my research, methods I find useful, and things I find interesting. Posts are listed below, newest first (unless I've make a mistake).

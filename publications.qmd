@@ -3,10 +3,10 @@ title: "Publications"
 ---
 
 ::: {.eyebrow}
-PEER-REVIEWED WORK
+PEER-REVIEWED WORK, PRE-PRINTS, AND TECHNICAL WORK
 :::
 
-A current list is on my [Google Scholar](https://scholar.google.com/citations?user=6_MaPZ8AAAAJ) and [UL Pure](https://pure.ul.ie/en/persons/david-osullivan/publications/) profiles. Open-access articles are marked [Open Access]{.badge}; links to media coverage, data, and outreach appear beneath each entry.
+A current list is on my [Google Scholar](https://scholar.google.com/citations?user=6_MaPZ8AAAAJ) and [UL Pure](https://pure.ul.ie/en/persons/david-osullivan/publications/) profiles. Links to media coverage, data, and outreach appear beneath each entry.
 
 :::: {.featured-pub}
 ::: {.featured-label}
@@ -17,41 +17,106 @@ A. Dubovskaya, C.B. Pena & **D.J.P. O'Sullivan** (2025).
 *Physical Review E*, 111(3), 034310.
 
 A multitype branching process framework for modelling how information and behaviour diffuse through networks with community structure, extending our earlier work to capture the interplay between diffusion dynamics and mesoscale network organisation.
+
+[[{{< ai arxiv >}}  arXiv paper link](https://arxiv.org/abs/2408.04456){.tag .tag-icon}]{.pub-tags}
 ::::
 
+
 <!--
-  To add a new entry, follow the same format:
+  ADDING A NEW PUBLICATION
+  Put it at the top of its "## YYYY" section (newest first within a year).
+  If it's a new year, add a new "## YYYY" heading above the current top one.
+  If it should be the new featured publication, see the featured-pub block
+  above instead — same tag/badge rules apply there.
 
-::: {.pub}
-Authors (Year). [Title](DOI link). *Journal*, vol(issue), pages. [Open Access]{.badge}
+  ::: {.pub}
+  Authors (Year). [Title](DOI link). *Journal*, vol(issue), pages. [Open Access]{.badge}
 
-[[Media/data label](url){.tag}]{.pub-tags}   <!- - optional clickable extras - ->
-:::
+  [[{{< ai arxiv >}} arXiv](https://arxiv.org/abs/XXXX.XXXXX){.tag .tag-icon} [<i class="bi bi-github"></i> Code](url){.tag .tag-icon} [<i class="bi bi-database"></i> Open data](url){.tag .tag-icon} [<i class="bi bi-patch-check"></i> Peer review](url){.tag .tag-icon} [<i class="bi bi-newspaper"></i> Press release](url){.tag .tag-icon} [Media label](url){.tag}]{.pub-tags}
+  :::
+
+  BADGES — honours/status, placed inline after the citation, e.g. [Open Access]{.badge}:
+    Open Access · Editors' Suggestion · Invited special issue · Featured on journal homepage
+    (add new wording as needed — any short phrase works with the .badge class)
+
+  TAGS — clickable extras, placed in one .pub-tags line below the entry.
+  Every tag should have an icon where a sensible one exists: pair {.tag .tag-icon}
+  with an inline icon in the link text. Icons come from two sources already
+  loaded by the site — academicons (`{{< ai NAME >}}`, e.g. arxiv, orcid,
+  google-scholar) and Bootstrap Icons (`<i class="bi bi-NAME"></i>`, the same
+  set used for the navbar's GitHub/email icons). Find icon names at
+  https://icons.getbootstrap.com. Current conventions used on this page:
+
+    arXiv          {{< ai arxiv >}}                      preprint
+    Code           <i class="bi bi-github"></i>          GitHub repo
+    Code           <i class="bi bi-code-slash"></i>      non-GitHub code/model archive (e.g. CoMSES)
+    Open data      <i class="bi bi-database"></i>        dataset archive — Zenodo, UK Data Service ReShare, OSF, Figshare, etc.
+    Paper link    <i class="bi bi-patch-check"></i>     open peer review history / decision letter
+                   (PLOS journals publish this by default — link to the article page)
+    Press release  <i class="bi bi-newspaper"></i>       university / EurekAlert / funder press release
+    News article   <i class="bi bi-newspaper"></i>       e.g. "The Times"
+    Blog post      <i class="bi bi-chat-square-text"></i> e.g. "ECMI blog", outreach writing
+    Radio/podcast  <i class="bi bi-mic"></i>              e.g. "Radio interview"
+
+  If nothing above fits, a plain [Label](url){.tag} with no icon (just the
+  outbound arrow) is perfectly fine — don't force a mismatched icon.
+
+  IMPORTANT: only add a tag if you have a real, verified URL for it — never
+  invent or guess a link (arXiv IDs, GitHub usernames, and press URLs are all
+  easy to get subtly wrong, and a wrong link is worse than no tag).
 -->
 
+
+## 2026
+
+::: {.pub}
+A. Dubovskaya, **D.J.P. O'Sullivan** & M. Quayle (2026).
+[Opinion polarization from compression-based decision making where agents optimize local complexity and global simplicity](https://doi.org/10.1371/journal.pcsy.0000115).
+*PLOS Complex Systems*, 3(9), e0000115. 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2604.18755){.tag .tag-icon}
+[<i class="bi bi-code-slash"></i> Zenodo Code](https://doi.org/10.5281/zenodo.21066810){.tag .tag-icon}
+[<i class="bi bi-github"></i> Github code](https://github.com/daxelka/opinion-polarization-compression-abm/tree/v1.0){.tag .tag-icon}
+[<i class="bi bi-patch-check"></i> Paper link](https://journals.plos.org/complexsystems/article?id=10.1371/journal.pcsy.0000115){.tag .tag-icon}]{.pub-tags}
+:::
+
+::: {.pub}
+V. Labatut & **D.J.P. O'Sullivan** (2026).
+[RugbyScope: a transfer-oriented database of rugby union teams and players](https://doi.org/10.1016/j.dib.2026.113231).
+*Data in Brief*, 69, 113231.
+
+[[<i class="bi bi-github"></i> Code](https://github.com/CompNet/RugbyScope/tree/main){.tag .tag-icon}
+[<i class="bi bi-database"></i> Open data](https://zenodo.org/records/21476474){.tag .tag-icon}
+[<i class="bi bi-patch-check"></i> Paper link](https://www.sciencedirect.com/science/article/pii/S235234092600778X){.tag .tag-icon}]{.pub-tags}
+:::
 
 ## 2025
 
 ::: {.pub}
 C.B. Pena, **D.J.P. O'Sullivan**, P. MacCarron & A. Saxena (2025).
 [Dynamics of temporal influence in polarised networks](https://doi.org/10.1371/journal.pone.0337753).
-*PLoS ONE*, 20(12), e0337753. [Open Access]{.badge}
+*PLoS ONE*, 20(12), e0337753. 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2507.17177){.tag .tag-icon} 
+[<i class="bi bi-patch-check"></i> Paper link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0337753){.tag .tag-icon}]{.pub-tags}
 :::
 
 ::: {.pub}
 C.B. Pena, P. MacCarron & **D.J.P. O'Sullivan** (2025).
 [Finding polarized communities and tracking information diffusion on Twitter: A network approach on the Irish Abortion Referendum](https://doi.org/10.1098/rsos.240454).
-*Royal Society Open Science*, 12(1), 240454. [Open Access]{.badge}
+*Royal Society Open Science*, 12(1), 240454. 
 
-[[{{< ai arxiv >}} arXiv](https://arxiv.org/abs/2311.09196){.tag .tag-icon} 
-[RTÉ Brainstorm](https://www.rte.ie/brainstorm/2025/0521/1514094-marriage-equality-referendum-twitter-social-media-research-polarisation/){.tag} 
-[ECMI blog](https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/){.tag}]{.pub-tags}
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2311.09196){.tag .tag-icon}
+[<i class="bi bi-newspaper"></i> RTÉ Brainstorm](https://www.rte.ie/brainstorm/2025/0521/1514094-marriage-equality-referendum-twitter-social-media-research-polarisation/){.tag .tag-icon}
+[<i class="bi bi-chat-square-text"></i> ECMI blog](https://ecmiindmath.org/2025/02/24/limerick-very-little-information-spreads-between-polarised-communities-on-a-social-media-network/){.tag .tag-icon}]{.pub-tags}
 :::
 
 ::: {.pub}
 L. O'Mahony, N.S. Nikolov & **D.J.P. O'Sullivan** (2025).
 Towards Utilising a Range of Neural Activations for Comprehending Representational Associations.
 *2025 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)*, pp. 2495–2506.
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2411.10019){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2024
@@ -59,7 +124,10 @@ Towards Utilising a Range of Neural Activations for Comprehending Representation
 ::: {.pub}
 A.K. Rizi, L.A. Keating, J.P. Gleeson, **D.J.P. O'Sullivan** & M. Kivelä (2024).
 [Effectiveness of contact tracing on networks with cliques](https://doi.org/10.1103/PhysRevE.109.024303).
-*Physical Review E*, 109(2), 024303. [Open Access]{.badge}
+*Physical Review E*, 109(2), 024303. 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2304.10405){.tag .tag-icon} 
+[<i class="bi bi-github"></i> Github code](https://github.com/k-rizi/Contact-Tracing-On-Clique-Networks){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2023
@@ -67,13 +135,17 @@ A.K. Rizi, L.A. Keating, J.P. Gleeson, **D.J.P. O'Sullivan** & M. Kivelä (2024)
 ::: {.pub}
 L.A. Keating, J.P. Gleeson & **D.J.P. O'Sullivan** (2023).
 [A generating-function approach to modelling complex contagion on clustered networks with multi-type branching processes](https://doi.org/10.1093/comnet/cnad042).
-*Journal of Complex Networks*, 11(6), cnad042. [Open Access]{.badge}
+*Journal of Complex Networks*, 11(6), cnad042. 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2212.00584){.tag .tag-icon}]{.pub-tags}
 :::
 
 ::: {.pub}
 A. Dinkelberg, P. MacCarron, P.J. Maher, **D.J.P. O'Sullivan** & M. Quayle (2023).
 [Dyadic interaction shapes social identity in the Axelrod model using empirical data](https://www.jasss.org/26/2/2.html).
-*Journal of Artificial Societies and Social Simulation*, 26(2). [Open Access]{.badge}
+*Journal of Artificial Societies and Social Simulation*, 26(2). 
+
+[[<i class="bi bi-code-slash"></i> Code](https://www.comses.net/codebases/a7205de4-3a22-4586-93f2-cf9e8045892b/releases/1.0.0/){.tag .tag-icon}]{.pub-tags}
 :::
 
 ::: {.pub}
@@ -81,7 +153,16 @@ L. Sprejer, H. Margetts, K. Oliveira, **D.J.P. O'Sullivan** & B. Vidgen (2023).
 [An actor-based approach to understanding radical right viral tweets in the UK](https://doi.org/10.1080/18335330.2022.2086440).
 *Journal of Policing, Intelligence and Counter Terrorism*, 18(2), 139–157.
 
-[[Open data](https://zenodo.org/records/6393085){.tag}]{.pub-tags}
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2109.07588){.tag .tag-icon} 
+[<i class="bi bi-database"></i> Open data](https://zenodo.org/records/6393085){.tag .tag-icon}]{.pub-tags}
+:::
+
+::: {.pub}
+L. O'Mahony, **D.J.P. O'Sullivan** & N.S. Nikolov (2023).
+[On the Detection of Anomalous or Out-of-Distribution Data in Vision Models Using Statistical Techniques](https://doi.org/10.1007/978-3-031-27762-7_40).
+*The 3rd International Conference on Artificial Intelligence and Computer Vision (AICV 2023)*, Lecture Notes on Data Engineering and Communications Technologies, vol. 164, pp. 426–435.
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2403.15497){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2022
@@ -89,13 +170,18 @@ L. Sprejer, H. Margetts, K. Oliveira, **D.J.P. O'Sullivan** & B. Vidgen (2023).
 ::: {.pub}
 L.A. Keating, J.P. Gleeson & **D.J.P. O'Sullivan** (2022).
 [A multi-type branching process method for modelling complex contagion on clustered networks](https://doi.org/10.1103/PhysRevE.105.034306).
-*Physical Review E*, 105(3), 034306. [Editors' Suggestion]{.badge} [Open Access]{.badge}
+*Physical Review E*, 105(3), 034306. [Editors' Suggestion]{.badge} 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2107.10134){.tag .tag-icon}]{.pub-tags}
 :::
 
 ::: {.pub}
 J.P. Gleeson, T. Brendan Murphy, J.D. O'Brien, N. Friel, N. Bargary & **D.J.P. O'Sullivan** (2022).
 [Calibrating COVID-19 susceptible-exposed-infected-removed models with time-varying effective contact rates](https://doi.org/10.1098/rsta.2021.0120).
-*Philosophical Transactions of the Royal Society A*, 380(2214), 20210120. [Invited special issue]{.badge} [Open Access]{.badge}
+*Philosophical Transactions of the Royal Society A*, 380(2214), 20210120. [Invited special issue]{.badge} 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2106.04705){.tag .tag-icon} 
+[<i class="bi bi-github"></i> Github code](https://github.com/obrienjoey/ireland_covid_modelling){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2021
@@ -103,15 +189,21 @@ J.P. Gleeson, T. Brendan Murphy, J.D. O'Brien, N. Friel, N. Bargary & **D.J.P. O
 ::: {.pub}
 J.D. O'Brien, J.P. Gleeson & **D.J.P. O'Sullivan** (2021).
 [Identification of skill in an online game: The case of Fantasy Premier League](https://doi.org/10.1371/journal.pone.0246698).
-*PLoS ONE*, 16(3), e0246698. [Open Access]{.badge}
+*PLoS ONE*, 16(3), e0246698. 
 
-[[The Times](https://www.thetimes.co.uk/article/best-fantasy-football-managers-are-the-special-ones-837qqrfqm){.tag} [Radio interview](https://www.todayfm.com/podcasts/the-last-word-with-matt-cooper/the-secrets-of-fantasy-football-success){.tag}]{.pub-tags}
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2009.01206){.tag .tag-icon} 
+[<i class="bi bi-patch-check"></i> Paper link](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0246698){.tag .tag-icon} 
+[<i class="bi bi-newspaper"></i> Press release](https://www.eurekalert.org/news-releases/829079){.tag .tag-icon} 
+[<i class="bi bi-newspaper"></i> The Times](https://www.thetimes.co.uk/article/best-fantasy-football-managers-are-the-special-ones-837qqrfqm){.tag .tag-icon} 
+[<i class="bi bi-mic"></i> Radio interview](https://www.todayfm.com/podcasts/the-last-word-with-matt-cooper/the-secrets-of-fantasy-football-success){.tag .tag-icon}]{.pub-tags}
 :::
 
 ::: {.pub}
 A. Dinkelberg, **D.J.P. O'Sullivan**, M. Quayle & P. MacCarron (2021).
 [Detecting opinion-based groups and polarization in survey-based attitude networks and estimating question relevance](https://doi.org/10.1142/S0219525921500065).
-*Advances in Complex Systems*, 24(2), 2150006. [Open Access]{.badge}
+*Advances in Complex Systems*, 24(2), 2150006. 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2104.14427){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2020
@@ -119,7 +211,9 @@ A. Dinkelberg, **D.J.P. O'Sullivan**, M. Quayle & P. MacCarron (2021).
 ::: {.pub}
 J.P. Gleeson, T. Onaga, P. Fennell, J. Cotter, R. Burke & **D.J.P. O'Sullivan** (2020).
 [Branching process descriptions of information cascades on Twitter](https://doi.org/10.1093/comnet/cnab002).
-*Journal of Complex Networks*, 8(6), cnab002. [Open Access]{.badge}
+*Journal of Complex Networks*, 8(6), cnab002. 
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/2007.08916){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2017
@@ -127,9 +221,17 @@ J.P. Gleeson, T. Onaga, P. Fennell, J. Cotter, R. Burke & **D.J.P. O'Sullivan** 
 ::: {.pub}
 **D.J.P. O'Sullivan**, G. Garduño-Hernández, J.P. Gleeson & M. Beguerisse-Díaz (2017).
 [Integrating sentiment and social structure to determine preference alignments: the Irish Marriage Referendum](https://doi.org/10.1098/rsos.170154).
-*Royal Society Open Science*, 4(7), 170154. [Open Access]{.badge}
+*Royal Society Open Science*, 4(7), 170154. 
 
-[[The Times](https://www.thetimes.co.uk/article/want-to-persuade-opponents-on-social-media-no-one-is-listening-nrwr38zd3){.tag}]{.pub-tags}
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/1701.00289){.tag .tag-icon} 
+[<i class="bi bi-database"></i> Open data](https://reshare.ukdataservice.ac.uk/852731/){.tag .tag-icon} 
+[<i class="bi bi-newspaper"></i> The Times](https://www.thetimes.co.uk/article/want-to-persuade-opponents-on-social-media-no-one-is-listening-nrwr38zd3){.tag .tag-icon}]{.pub-tags}
+:::
+
+::: {.pub}
+**D.J.P. O'Sullivan** (2017).
+[Dynamics of Behaviour and Information Diffusion on Complex Networks: Analytical and Empirical Perspectives](https://researchrepository.ul.ie/articles/thesis/Dynamics_of_behaviour_and_information_diffusion_on_complex_networks_analytical_and_empirical_perspectives/19814545).
+PhD thesis, University of Limerick. [PhD Thesis]{.badge}
 :::
 
 ## 2016
@@ -138,6 +240,8 @@ J.P. Gleeson, T. Onaga, P. Fennell, J. Cotter, R. Burke & **D.J.P. O'Sullivan** 
 P.G. Fennell, **D.J.P. O'Sullivan**, A. Godin & S. Kinsella (2016).
 [Is it possible to visualise any stock flow consistent model as a directed acyclic graph?](https://doi.org/10.1007/s10614-015-9521-8)
 *Computational Economics*, 48(2), 307–316.
+
+[[{{< ai arxiv >}} arXiv paper link](https://arxiv.org/abs/1409.4541){.tag .tag-icon}]{.pub-tags}
 :::
 
 ## 2015
@@ -145,6 +249,6 @@ P.G. Fennell, **D.J.P. O'Sullivan**, A. Godin & S. Kinsella (2016).
 ::: {.pub}
 **D.J.P. O'Sullivan**, G.J. O'Keeffe, P.G. Fennell & J.P. Gleeson (2015).
 [Mathematical modelling of complex contagion on clustered networks](https://doi.org/10.3389/fphy.2015.00071).
-*Frontiers in Physics*, 3, 71. [Featured on journal homepage]{.badge} [Open Access]{.badge}
+*Frontiers in Physics*, 3, 71. [Featured on journal homepage]{.badge} 
 :::
 

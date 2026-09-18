@@ -63,11 +63,10 @@ My research focuses on the science of social networks. I develop analytical tool
 **Visiting Researcher** · BT Ireland Innovation Centre, University of Ulster · 2020–2024
 : Flexible statistical methods to detect deterioration in model performance and automate retraining.
 
-**Post-doctoral Researcher** · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019
-: Network science research in collaboration with Emirates airline (Supervisor: Prof. Peter Grindrod).
+**Post-doctoral Researcher** · Oxford-Emirates Data Science Lab, Mathematical Institute, University of Oxford · 2019.
 
 **Post-doctoral Researcher & Statistical Consultant** · Industrial Mathematics Unit, University of Limerick · 2017–2018
-: Building industry collaborations and continuing network science research (Supervisor: Dr. Kevin Burke).
+: Building industry collaborations and continuing network science research.
 
 <!-- ## News -->
 

@@ -17,3 +17,9 @@ Thumbs.db
 
 # Add any private files you don't want published, e.g. a grant/CV PDF:
 # My_Private_CV.pdf
+
+# Draft posts: any folder whose name ends in "draft", at any depth.
+# The trailing slash makes this match directories only.
+# Pair with a leading underscore on the folder (e.g. posts/_2026-09-05-slug-draft/)
+# so Quarto skips it at render time too.
+*draft/

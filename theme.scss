@@ -29,6 +29,12 @@ $navbar-bg: $paper;
 $navbar-fg: $ink;
 $footer-bg: $paper;
 
+// ------- Code -------
+// Tint code blocks with the teal accent rather than Bootstrap's default grey.
+// The visible outline is set in scss:rules below (Quarto's built-in
+// $code-block-border-left only draws a left-hand rule, not a full box).
+$code-block-bg: rgba($teal, 0.035);
+
 /*-- scss:rules --*/
 
 body {
@@ -174,16 +180,76 @@ a.tag:hover {
   background: rgba($teal, 0.06);
 }
 
-// Icon variant (e.g. arXiv) — shows the academicons glyph instead of
-// the outbound arrow, with a little breathing room before the label.
+// Icon variant — shows a glyph instead of the outbound arrow, with a
+// little breathing room before the label. Covers both academicons (.ai,
+// e.g. arXiv) and Bootstrap Icons (.bi, e.g. GitHub/database/newspaper —
+// the same icon set already used for the navbar's GitHub/email links).
 .tag-icon {
   &::after { content: none; }
 
-  .ai {
+  .ai, .bi {
     margin-right: 0.3rem;
     font-size: 0.78rem;
     vertical-align: -0.05rem;
   }
+}
+
+// ------- Code blocks -------
+// Input cells get a teal-tinted box with a full outline; printed output gets a
+// quieter grey box, so code and results are easy to tell apart at a glance.
+div.sourceCode {
+  position: relative;
+  border: 1px solid rgba($teal, 0.22);
+  border-radius: 6px;
+  background: rgba($teal, 0.035);
+  margin: 1.15rem 0;
+}
+
+// The inner <pre> supplies the padding; the box itself carries the background,
+// so rounded corners stay clean and the copy button isn't clipped.
+div.sourceCode pre.sourceCode {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0.85rem 1rem;
+}
+
+pre.sourceCode code {
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+// Printed results / console output from executed chunks
+.cell-output pre {
+  border: 1px solid $hairline;
+  border-radius: 6px;
+  background: $paper;
+  margin: 0.45rem 0 1.15rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: $slate;
+}
+
+// Collapsed code (when a chunk sets code-fold: true)
+details > summary {
+  font-family: $font-family-monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: $slate;
+  cursor: pointer;
+
+  &:hover { color: $teal; }
+}
+
+// Inline code — a light teal chip, quieter than a full block
+p code, li code, td code, dd code {
+  background: rgba($teal, 0.07);
+  border: 1px solid rgba($teal, 0.16);
+  border-radius: 3px;
+  padding: 0.02rem 0.3rem;
+  font-size: 0.86em;
+  color: $teal-dark;
 }
 
 // About page (trestles template) tweaks

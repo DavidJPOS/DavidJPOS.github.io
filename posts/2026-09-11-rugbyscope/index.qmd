@@ -1,0 +1,31 @@
+---
+title: "RugbyScope: an open database of rugby union careers"
+description: "A data paper with Vincent Labatut describing RugbyScope, an open database of 24,364 men's rugby union players, 7,888 teams and 96,573 career stints."
+author: "David J.P. O'Sullivan"
+date: "2026-09-11"
+categories: [rugby, open data, data paper, wikipedia]
+draft: false
+---
+
+Dear reader, 
+
+[Vincent Labatut](https://univ-avignon.fr/en/research-teacher/vincent-labatut/) (Laboratoire Informatique d'Avignon, Avignon University) and I have a data paper out in *Data in Brief* that was just published. It describes RugbyScope, an open database of men's rugby union players, teams, player's stints whose teams and other demographical information. Just a note: here a stint is one player at one team over a continuous run of seasons, so a career is a sequence of stints.
+
+Just to give you some information on what is in the dataset:
+
+- 24,364 players, 7,888 teams and 96,573 stints, from 1867 to 2026.
+- Players from 114 nations and teams from 180.
+- All professional clubs worldwide, and by our estimate about 92% of professional players active in 2021.
+- For players: birth and death details, height, weight, positions, nations, and identifiers for other rugby databases.
+- For teams: type, tier, competitions, venues and founding dates.
+- For stints: start and end years, matches played and points scored.
+
+We've been working on this for the two years, roughy. It was built from seven open sources: Wikidata, DBpedia, and the English, French, Italian, Japanese and Spanish editions of Wikipedia. The five languages were chosen to cover the main rugby nations and every professional league. Association football has several open databases like this. Rugby union had none; the rugby databases that do exist are commercial and closed.
+
+There are limits to data collected from such places of course. It is men's rugby only and excludes sevens, as the sources do not cover either consistently. It inherits the gaps of Wikipedia and Wikidata, so coverage is uneven across nations, periods and levels of competition. 
+
+Vincent did a huge amount of the heavy lifting on this. As one example, he ended up learning the rugby positions in Japanese kanji to scrape the Japanese edition. Most of the work was scraping Wikipedia infoboxes, which are formatted differently in each language edition and often within the same one, then reconciling five editions that do not always agree on who played where, or when. Wikipedia also changed quickly enough that some early code was obsolete before it had worked through all the articles. Additionally, thanks the use of AI agents to collect Wikipedia data over the data collection window we ran into some issues with there API. But were done now and the both the data and paper are publish. Links are below so you can go have a play.  
+
+- Paper: [doi.org/10.1016/j.dib.2026.113231](https://doi.org/10.1016/j.dib.2026.113231)
+- Data (CSV, SQL and SQLite): [doi.org/10.5281/zenodo.21476474](https://doi.org/10.5281/zenodo.21476474)
+- Code: [github.com/CompNet/RugbyScope](https://github.com/CompNet/RugbyScope)
